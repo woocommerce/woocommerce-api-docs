@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626086042">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626086042">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        </head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    WC_REST_WCCOM_Site_Installer_Errors
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce-WCCom.html">WCCom</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce-WCCom-API.html">API</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.16">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+</aside>
+
+            <p class="phpdocumentor-summary">WCCOM Site Installer Errors Class</p>
+
+    <section class="phpdocumentor-description"><p>Stores data for errors, returned by installer API.</p>
+</section>
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_INVALID_TOKEN_CODE">INVALID_TOKEN_CODE</a>
+    <span>
+        &nbsp;= &#039;invalid_token&#039;                    </span>
+</dt>
+<dd>Provided access token is not valid</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_INVALID_TOKEN_HTTP_CODE">INVALID_TOKEN_HTTP_CODE</a>
+    <span>
+        &nbsp;= 401                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_INVALID_TOKEN_MESSAGE">INVALID_TOKEN_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;Invalid access token provided&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_ACCESS_TOKEN_CODE">NO_ACCESS_TOKEN_CODE</a>
+    <span>
+        &nbsp;= &#039;no_access_token&#039;                    </span>
+</dt>
+<dd>No access token provided</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_ACCESS_TOKEN_HTTP_CODE">NO_ACCESS_TOKEN_HTTP_CODE</a>
+    <span>
+        &nbsp;= 400                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_ACCESS_TOKEN_MESSAGE">NO_ACCESS_TOKEN_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;No access token provided&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_PERMISSION_CODE">NO_PERMISSION_CODE</a>
+    <span>
+        &nbsp;= &#039;forbidden&#039;                    </span>
+</dt>
+<dd>No permissions error</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_PERMISSION_HTTP_CODE">NO_PERMISSION_HTTP_CODE</a>
+    <span>
+        &nbsp;= 403                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_PERMISSION_MESSAGE">NO_PERMISSION_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;You do not have permission to install plugin or theme&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_SIGNATURE_CODE">NO_SIGNATURE_CODE</a>
+    <span>
+        &nbsp;= &#039;no_signature&#039;                    </span>
+</dt>
+<dd>No signature provided</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_SIGNATURE_HTTP_CODE">NO_SIGNATURE_HTTP_CODE</a>
+    <span>
+        &nbsp;= 400                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NO_SIGNATURE_MESSAGE">NO_SIGNATURE_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;No signature provided&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NOT_AUTHENTICATED_CODE">NOT_AUTHENTICATED_CODE</a>
+    <span>
+        &nbsp;= &#039;not_authenticated&#039;                    </span>
+</dt>
+<dd>Not unauthenticated generic error</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NOT_AUTHENTICATED_HTTP_CODE">NOT_AUTHENTICATED_HTTP_CODE</a>
+    <span>
+        &nbsp;= 401                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_NOT_AUTHENTICATED_MESSAGE">NOT_AUTHENTICATED_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;Authentication required&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_REQUEST_VERIFICATION_FAILED_CODE">REQUEST_VERIFICATION_FAILED_CODE</a>
+    <span>
+        &nbsp;= &#039;request_verification_failed&#039;                    </span>
+</dt>
+<dd>Request verification by provided signature failed</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_REQUEST_VERIFICATION_FAILED_HTTP_CODE">REQUEST_VERIFICATION_FAILED_HTTP_CODE</a>
+    <span>
+        &nbsp;= 400                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_REQUEST_VERIFICATION_FAILED_MESSAGE">REQUEST_VERIFICATION_FAILED_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;Request verification by signature failed&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_SITE_NOT_CONNECTED_CODE">SITE_NOT_CONNECTED_CODE</a>
+    <span>
+        &nbsp;= &#039;site_not_connnected&#039;                    </span>
+</dt>
+<dd>Site not connected to WooCommerce.com</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_SITE_NOT_CONNECTED_HTTP_CODE">SITE_NOT_CONNECTED_HTTP_CODE</a>
+    <span>
+        &nbsp;= 401                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_SITE_NOT_CONNECTED_MESSAGE">SITE_NOT_CONNECTED_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;Site not connected to WooCommerce.com&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_USER_NOT_FOUND_CODE">USER_NOT_FOUND_CODE</a>
+    <span>
+        &nbsp;= &#039;user_not_found&#039;                    </span>
+</dt>
+<dd>User doesn&#039;t exist</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_USER_NOT_FOUND_HTTP_CODE">USER_NOT_FOUND_HTTP_CODE</a>
+    <span>
+        &nbsp;= 401                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="../classes/WC-REST-WCCOM-Site-Installer-Errors.html#constant_USER_NOT_FOUND_MESSAGE">USER_NOT_FOUND_MESSAGE</a>
+    <span>
+        &nbsp;= &#039;Token owning user not found&#039;                    </span>
+</dt>
+<dd></dd>
+
+                </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INVALID_TOKEN_CODE">
+        INVALID_TOKEN_CODE
+        <a href="#constant_INVALID_TOKEN_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.49">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Provided access token is not valid</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INVALID_TOKEN_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;invalid_token&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INVALID_TOKEN_HTTP_CODE">
+        INVALID_TOKEN_HTTP_CODE
+        <a href="#constant_INVALID_TOKEN_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.51">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INVALID_TOKEN_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">401</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INVALID_TOKEN_MESSAGE">
+        INVALID_TOKEN_MESSAGE
+        <a href="#constant_INVALID_TOKEN_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.50">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INVALID_TOKEN_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Invalid access token provided&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_ACCESS_TOKEN_CODE">
+        NO_ACCESS_TOKEN_CODE
+        <a href="#constant_NO_ACCESS_TOKEN_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.28">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+</aside>
+
+        <p class="phpdocumentor-summary">No access token provided</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_ACCESS_TOKEN_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;no_access_token&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_ACCESS_TOKEN_HTTP_CODE">
+        NO_ACCESS_TOKEN_HTTP_CODE
+        <a href="#constant_NO_ACCESS_TOKEN_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.30">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_ACCESS_TOKEN_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">400</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_ACCESS_TOKEN_MESSAGE">
+        NO_ACCESS_TOKEN_MESSAGE
+        <a href="#constant_NO_ACCESS_TOKEN_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.29">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_ACCESS_TOKEN_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;No access token provided&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_PERMISSION_CODE">
+        NO_PERMISSION_CODE
+        <a href="#constant_NO_PERMISSION_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.70">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+</aside>
+
+        <p class="phpdocumentor-summary">No permissions error</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_PERMISSION_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;forbidden&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_PERMISSION_HTTP_CODE">
+        NO_PERMISSION_HTTP_CODE
+        <a href="#constant_NO_PERMISSION_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.72">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_PERMISSION_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">403</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_PERMISSION_MESSAGE">
+        NO_PERMISSION_MESSAGE
+        <a href="#constant_NO_PERMISSION_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.71">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_PERMISSION_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;You do not have permission to install plugin or theme&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_SIGNATURE_CODE">
+        NO_SIGNATURE_CODE
+        <a href="#constant_NO_SIGNATURE_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.35">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+</aside>
+
+        <p class="phpdocumentor-summary">No signature provided</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_SIGNATURE_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;no_signature&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_SIGNATURE_HTTP_CODE">
+        NO_SIGNATURE_HTTP_CODE
+        <a href="#constant_NO_SIGNATURE_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.37">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_SIGNATURE_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">400</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_SIGNATURE_MESSAGE">
+        NO_SIGNATURE_MESSAGE
+        <a href="#constant_NO_SIGNATURE_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.36">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_SIGNATURE_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;No signature provided&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NOT_AUTHENTICATED_CODE">
+        NOT_AUTHENTICATED_CODE
+        <a href="#constant_NOT_AUTHENTICATED_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.21">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Not unauthenticated generic error</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NOT_AUTHENTICATED_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;not_authenticated&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NOT_AUTHENTICATED_HTTP_CODE">
+        NOT_AUTHENTICATED_HTTP_CODE
+        <a href="#constant_NOT_AUTHENTICATED_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.23">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NOT_AUTHENTICATED_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">401</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NOT_AUTHENTICATED_MESSAGE">
+        NOT_AUTHENTICATED_MESSAGE
+        <a href="#constant_NOT_AUTHENTICATED_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.22">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NOT_AUTHENTICATED_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Authentication required&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REQUEST_VERIFICATION_FAILED_CODE">
+        REQUEST_VERIFICATION_FAILED_CODE
+        <a href="#constant_REQUEST_VERIFICATION_FAILED_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.56">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Request verification by provided signature failed</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REQUEST_VERIFICATION_FAILED_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;request_verification_failed&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REQUEST_VERIFICATION_FAILED_HTTP_CODE">
+        REQUEST_VERIFICATION_FAILED_HTTP_CODE
+        <a href="#constant_REQUEST_VERIFICATION_FAILED_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.58">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REQUEST_VERIFICATION_FAILED_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">400</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REQUEST_VERIFICATION_FAILED_MESSAGE">
+        REQUEST_VERIFICATION_FAILED_MESSAGE
+        <a href="#constant_REQUEST_VERIFICATION_FAILED_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.57">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REQUEST_VERIFICATION_FAILED_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Request verification by signature failed&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SITE_NOT_CONNECTED_CODE">
+        SITE_NOT_CONNECTED_CODE
+        <a href="#constant_SITE_NOT_CONNECTED_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.42">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Site not connected to WooCommerce.com</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SITE_NOT_CONNECTED_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;site_not_connnected&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SITE_NOT_CONNECTED_HTTP_CODE">
+        SITE_NOT_CONNECTED_HTTP_CODE
+        <a href="#constant_SITE_NOT_CONNECTED_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.44">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SITE_NOT_CONNECTED_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">401</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SITE_NOT_CONNECTED_MESSAGE">
+        SITE_NOT_CONNECTED_MESSAGE
+        <a href="#constant_SITE_NOT_CONNECTED_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.43">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SITE_NOT_CONNECTED_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Site not connected to WooCommerce.com&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_NOT_FOUND_CODE">
+        USER_NOT_FOUND_CODE
+        <a href="#constant_USER_NOT_FOUND_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.63">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+</aside>
+
+        <p class="phpdocumentor-summary">User doesn&#039;t exist</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_NOT_FOUND_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;user_not_found&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_NOT_FOUND_HTTP_CODE">
+        USER_NOT_FOUND_HTTP_CODE
+        <a href="#constant_USER_NOT_FOUND_HTTP_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.65">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_NOT_FOUND_HTTP_CODE</span>
+    = <span class="phpdocumentor-signature__default-value">401</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_NOT_FOUND_MESSAGE">
+        USER_NOT_FOUND_MESSAGE
+        <a href="#constant_USER_NOT_FOUND_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php"><a href="../files/woocommerce-includes-wccom-site-rest-api-class-wc-rest-wccom-site-installer-errors.html#source-view.64">includes/wccom-site/rest-api/class-wc-rest-wccom-site-installer-errors.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_NOT_FOUND_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Token owning user not found&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+            </section>
+
+        
+
+        
+    </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:34 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626086042"></script>
+    <script src="../js/search.js?updated=1626086042"></script>
+</body>
+</html>

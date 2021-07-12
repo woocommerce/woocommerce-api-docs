@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626085993">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626085993">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-admin-pointers.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Adds and controls pointers for contextual help/tutorials
+ *
+ * @package WooCommerce\Admin\Pointers
+ * @version 2.4.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+/**
+ * WC_Admin_Pointers Class.
+ */
+class WC_Admin_Pointers {
+
+	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+		add_action( &#039;admin_enqueue_scripts&#039;, array( $this, &#039;setup_pointers_for_screen&#039; ) );
+	}
+
+	/**
+	 * Setup pointers for screen.
+	 */
+	public function setup_pointers_for_screen() {
+		$screen = get_current_screen();
+
+		if ( ! $screen ) {
+			return;
+		}
+
+		switch ( $screen-&gt;id ) {
+			case &#039;product&#039;:
+				$this-&gt;create_product_tutorial();
+				break;
+		}
+	}
+
+	/**
+	 * Pointers for creating a product.
+	 */
+	public function create_product_tutorial() {
+		if ( ! isset( $_GET[&#039;tutorial&#039;] ) || ! current_user_can( &#039;manage_options&#039; ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			return;
+		}
+
+		// These pointers will chain - they will not be shown at once.
+		$pointers = array(
+			&#039;pointers&#039; =&gt; array(
+				&#039;title&#039;          =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#title&#039;,
+					&#039;next&#039;         =&gt; &#039;content&#039;,
+					&#039;next_trigger&#039; =&gt; array(
+						&#039;target&#039; =&gt; &#039;#title&#039;,
+						&#039;event&#039;  =&gt; &#039;input&#039;,
+					),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Product name&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Give your new product a name here. This is a required field and will be what your customers will see in your store.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;top&#039;,
+							&#039;align&#039; =&gt; &#039;left&#039;,
+						),
+					),
+				),
+				&#039;content&#039;        =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#wp-content-editor-container&#039;,
+					&#039;next&#039;         =&gt; &#039;product-type&#039;,
+					&#039;next_trigger&#039; =&gt; array(),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Product description&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;This is your products main body of content. Here you should describe your product in detail.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;bottom&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;product-type&#039;   =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#product-type&#039;,
+					&#039;next&#039;         =&gt; &#039;virtual&#039;,
+					&#039;next_trigger&#039; =&gt; array(
+						&#039;target&#039; =&gt; &#039;#product-type&#039;,
+						&#039;event&#039;  =&gt; &#039;change blur click&#039;,
+					),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Choose product type&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Choose a type for this product. Simple is suitable for most physical goods and services (we recommend setting up a simple product for now).&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Variable is for more complex products such as t-shirts with multiple sizes.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Grouped products are for grouping several simple products into one.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Finally, external products are for linking off-site.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;bottom&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;virtual&#039;        =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#_virtual&#039;,
+					&#039;next&#039;         =&gt; &#039;downloadable&#039;,
+					&#039;next_trigger&#039; =&gt; array(
+						&#039;target&#039; =&gt; &#039;#_virtual&#039;,
+						&#039;event&#039;  =&gt; &#039;change&#039;,
+					),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Virtual products&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Check the &quot;Virtual&quot; box if this is a non-physical item, for example a service, which does not need shipping.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;bottom&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;downloadable&#039;   =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#_downloadable&#039;,
+					&#039;next&#039;         =&gt; &#039;regular_price&#039;,
+					&#039;next_trigger&#039; =&gt; array(
+						&#039;target&#039; =&gt; &#039;#_downloadable&#039;,
+						&#039;event&#039;  =&gt; &#039;change&#039;,
+					),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Downloadable products&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;If purchasing this product gives a customer access to a downloadable file, e.g. software, check this box.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;bottom&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;regular_price&#039;  =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#_regular_price&#039;,
+					&#039;next&#039;         =&gt; &#039;postexcerpt&#039;,
+					&#039;next_trigger&#039; =&gt; array(
+						&#039;target&#039; =&gt; &#039;#_regular_price&#039;,
+						&#039;event&#039;  =&gt; &#039;input&#039;,
+					),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Prices&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Next you need to give your product a price.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;bottom&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;postexcerpt&#039;    =&gt; array(
+					&#039;target&#039;       =&gt; &#039;#postexcerpt&#039;,
+					&#039;next&#039;         =&gt; &#039;postimagediv&#039;,
+					&#039;next_trigger&#039; =&gt; array(
+						&#039;target&#039; =&gt; &#039;#postexcerpt&#039;,
+						&#039;event&#039;  =&gt; &#039;input&#039;,
+					),
+					&#039;options&#039;      =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Product short description&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Add a quick summary for your product here. This will appear on the product page under the product name.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;bottom&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;postimagediv&#039;   =&gt; array(
+					&#039;target&#039;  =&gt; &#039;#postimagediv&#039;,
+					&#039;next&#039;    =&gt; &#039;product_tag&#039;,
+					&#039;options&#039; =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Product images&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &quot;Upload or assign an image to your product here. This image will be shown in your store&#039;s catalog.&quot;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;right&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;product_tag&#039;    =&gt; array(
+					&#039;target&#039;  =&gt; &#039;#tagsdiv-product_tag&#039;,
+					&#039;next&#039;    =&gt; &#039;product_catdiv&#039;,
+					&#039;options&#039; =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Product tags&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;You can optionally &quot;tag&quot; your products here. Tags are a method of labeling your products to make them easier for customers to find.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;right&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;product_catdiv&#039; =&gt; array(
+					&#039;target&#039;  =&gt; &#039;#product_catdiv&#039;,
+					&#039;next&#039;    =&gt; &#039;submitdiv&#039;,
+					&#039;options&#039; =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Product categories&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;Optionally assign categories to your products to make them easier to browse through and find in your store.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;right&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+				&#039;submitdiv&#039;      =&gt; array(
+					&#039;target&#039;  =&gt; &#039;#submitdiv&#039;,
+					&#039;next&#039;    =&gt; &#039;&#039;,
+					&#039;options&#039; =&gt; array(
+						&#039;content&#039;  =&gt; &#039;&lt;h3&gt;&#039; . esc_html__( &#039;Publish your product!&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h3&gt;&#039; .
+										&#039;&lt;p&gt;&#039; . esc_html__( &#039;When you are finished editing your product, hit the &quot;Publish&quot; button to publish your product to your store.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/p&gt;&#039;,
+						&#039;position&#039; =&gt; array(
+							&#039;edge&#039;  =&gt; &#039;right&#039;,
+							&#039;align&#039; =&gt; &#039;middle&#039;,
+						),
+					),
+				),
+			),
+		);
+
+		$this-&gt;enqueue_pointers( $pointers );
+	}
+
+	/**
+	 * Enqueue pointers and add script to page.
+	 *
+	 * @param array $pointers Pointers data.
+	 */
+	public function enqueue_pointers( $pointers ) {
+		$pointers = rawurlencode( wp_json_encode( $pointers ) );
+		wp_enqueue_style( &#039;wp-pointer&#039; );
+		wp_enqueue_script( &#039;wp-pointer&#039; );
+		wc_enqueue_js(
+			&quot;jQuery( function( $ ) {
+				var wc_pointers = JSON.parse( decodeURIComponent( &#039;{$pointers}&#039; ) );
+
+				setTimeout( init_wc_pointers, 800 );
+
+				function init_wc_pointers() {
+					$.each( wc_pointers.pointers, function( i ) {
+						show_wc_pointer( i );
+						return false;
+					});
+				}
+
+				function show_wc_pointer( id ) {
+					var pointer = wc_pointers.pointers[ id ];
+					var options = $.extend( pointer.options, {
+						pointerClass: &#039;wp-pointer wc-pointer&#039;,
+						close: function() {
+							if ( pointer.next ) {
+								show_wc_pointer( pointer.next );
+							}
+						},
+						buttons: function( event, t ) {
+							var close   = &#039;&quot; . esc_js( __( &#039;Dismiss&#039;, &#039;woocommerce&#039; ) ) . &quot;&#039;,
+								next    = &#039;&quot; . esc_js( __( &#039;Next&#039;, &#039;woocommerce&#039; ) ) . &quot;&#039;,
+								button  = $( &#039;&lt;a class=\&quot;close\&quot; href=\&quot;#\&quot;&gt;&#039; + close + &#039;&lt;/a&gt;&#039; ),
+								button2 = $( &#039;&lt;a class=\&quot;button button-primary\&quot; href=\&quot;#\&quot;&gt;&#039; + next + &#039;&lt;/a&gt;&#039; ),
+								wrapper = $( &#039;&lt;div class=\&quot;wc-pointer-buttons\&quot; /&gt;&#039; );
+
+							button.on( &#039;click.pointer&#039;, function(e) {
+								e.preventDefault();
+								t.element.pointer(&#039;destroy&#039;);
+							});
+
+							button2.on( &#039;click.pointer&#039;, function(e) {
+								e.preventDefault();
+								t.element.pointer(&#039;close&#039;);
+							});
+
+							wrapper.append( button );
+							wrapper.append( button2 );
+
+							return wrapper;
+						},
+					} );
+					var this_pointer = $( pointer.target ).pointer( options );
+					this_pointer.pointer( &#039;open&#039; );
+
+					if ( pointer.next_trigger ) {
+						$( pointer.next_trigger.target ).on( pointer.next_trigger.event, function() {
+							setTimeout( function() { this_pointer.pointer( &#039;close&#039; ); }, 400 );
+						});
+					}
+				}
+			});&quot;
+		);
+	}
+}
+
+new WC_Admin_Pointers();
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626085993"></script>
+    <script src="../js/search.js?updated=1626085993"></script>
+</body>
+</html>

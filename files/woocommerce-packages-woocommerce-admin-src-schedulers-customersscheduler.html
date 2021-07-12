@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626086000">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626086000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">CustomersScheduler.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Customer syncing related functions and actions.
+ */
+
+namespace Automattic\WooCommerce\Admin\Schedulers;
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+use \Automattic\WooCommerce\Admin\API\Reports\Cache as ReportsCache;
+use \Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore as CustomersDataStore;
+use \Automattic\WooCommerce\Admin\Schedulers\OrdersScheduler;
+
+/**
+ * CustomersScheduler Class.
+ */
+class CustomersScheduler extends ImportScheduler {
+	/**
+	 * Slug to identify the scheduler.
+	 *
+	 * @var string
+	 */
+	public static $name = &#039;customers&#039;;
+
+	/**
+	 * Attach customer lookup update hooks.
+	 */
+	public static function init() {
+		add_action( &#039;woocommerce_new_customer&#039;, array( __CLASS__, &#039;schedule_import&#039; ) );
+		add_action( &#039;woocommerce_update_customer&#039;, array( __CLASS__, &#039;schedule_import&#039; ) );
+		add_action( &#039;updated_user_meta&#039;, array( __CLASS__, &#039;schedule_import_via_last_active&#039; ), 10, 3 );
+		add_action( &#039;woocommerce_privacy_remove_order_personal_data&#039;, array( __CLASS__, &#039;schedule_anonymize&#039; ) );
+		add_action( &#039;delete_user&#039;, array( __CLASS__, &#039;schedule_user_delete&#039; ) );
+		add_action( &#039;remove_user_from_blog&#039;, array( __CLASS__, &#039;schedule_user_delete&#039; ) );
+
+		CustomersDataStore::init();
+		parent::init();
+	}
+
+	/**
+	 * Add customer dependencies.
+	 *
+	 * @return array
+	 */
+	public static function get_dependencies() {
+		return array(
+			&#039;delete_batch_init&#039; =&gt; OrdersScheduler::get_action( &#039;delete_batch_init&#039; ),
+			&#039;anonymize&#039;         =&gt; self::get_action( &#039;import&#039; ),
+			&#039;delete_user&#039;       =&gt; self::get_action( &#039;import&#039; ),
+		);
+	}
+
+	/**
+	 * Get the customer IDs and total count that need to be synced.
+	 *
+	 * @param int      $limit Number of records to retrieve.
+	 * @param int      $page  Page number.
+	 * @param int|bool $days Number of days prior to current date to limit search results.
+	 * @param bool     $skip_existing Skip already imported customers.
+	 */
+	public static function get_items( $limit = 10, $page = 1, $days = false, $skip_existing = false ) {
+		$customer_roles = apply_filters( &#039;woocommerce_analytics_import_customer_roles&#039;, array( &#039;customer&#039; ) );
+		$query_args     = array(
+			&#039;fields&#039;   =&gt; &#039;ID&#039;,
+			&#039;orderby&#039;  =&gt; &#039;ID&#039;,
+			&#039;order&#039;    =&gt; &#039;ASC&#039;,
+			&#039;number&#039;   =&gt; $limit,
+			&#039;paged&#039;    =&gt; $page,
+			&#039;role__in&#039; =&gt; $customer_roles,
+		);
+
+		if ( is_int( $days ) ) {
+			$query_args[&#039;date_query&#039;] = array(
+				&#039;after&#039; =&gt; gmdate( &#039;Y-m-d 00:00:00&#039;, time() - ( DAY_IN_SECONDS * $days ) ),
+			);
+		}
+
+		if ( $skip_existing ) {
+			add_action( &#039;pre_user_query&#039;, array( __CLASS__, &#039;exclude_existing_customers_from_query&#039; ) );
+		}
+
+		$customer_query = new \WP_User_Query( $query_args );
+
+		remove_action( &#039;pre_user_query&#039;, array( __CLASS__, &#039;exclude_existing_customers_from_query&#039; ) );
+
+		return (object) array(
+			&#039;total&#039; =&gt; $customer_query-&gt;get_total(),
+			&#039;ids&#039;   =&gt; $customer_query-&gt;get_results(),
+		);
+	}
+
+	/**
+	 * Exclude users that already exist in our customer lookup table.
+	 *
+	 * Meant to be hooked into &#039;pre_user_query&#039; action.
+	 *
+	 * @param WP_User_Query $wp_user_query WP_User_Query to modify.
+	 */
+	public static function exclude_existing_customers_from_query( $wp_user_query ) {
+		global $wpdb;
+
+		$wp_user_query-&gt;query_where .= &quot; AND NOT EXISTS (
+			SELECT ID FROM {$wpdb-&gt;prefix}wc_customer_lookup
+			WHERE {$wpdb-&gt;prefix}wc_customer_lookup.user_id = {$wpdb-&gt;users}.ID
+		)&quot;;
+	}
+
+	/**
+	 * Get total number of rows imported.
+	 *
+	 * @return int
+	 */
+	public static function get_total_imported() {
+		global $wpdb;
+		return $wpdb-&gt;get_var( &quot;SELECT COUNT(*) FROM {$wpdb-&gt;prefix}wc_customer_lookup&quot; );
+	}
+
+	/**
+	 * Get all available scheduling actions.
+	 * Used to determine action hook names and clear events.
+	 *
+	 * @return array
+	 */
+	public static function get_scheduler_actions() {
+		$actions                = parent::get_scheduler_actions();
+		$actions[&#039;anonymize&#039;]   = &#039;wc-admin_anonymize_&#039; . static::$name;
+		$actions[&#039;delete_user&#039;] = &#039;wc-admin_delete_user_&#039; . static::$name;
+		return $actions;
+	}
+
+	/**
+	 * Schedule import.
+	 *
+	 * @param int $user_id User ID.
+	 * @return void
+	 */
+	public static function schedule_import( $user_id ) {
+		self::schedule_action( &#039;import&#039;, array( $user_id ) );
+	}
+
+	/**
+	 * Schedule an import if the &quot;last active&quot; meta value was changed.
+	 * Function expects to be hooked into the `updated_user_meta` action.
+	 *
+	 * @param int    $meta_id ID of updated metadata entry.
+	 * @param int    $user_id ID of the user being updated.
+	 * @param string $meta_key Meta key being updated.
+	 */
+	public static function schedule_import_via_last_active( $meta_id, $user_id, $meta_key ) {
+		if ( &#039;wc_last_active&#039; === $meta_key ) {
+			self::schedule_import( $user_id );
+		}
+	}
+
+	/**
+	 * Schedule an action to anonymize a single Order.
+	 *
+	 * @param WC_Order $order Order object.
+	 * @return void
+	 */
+	public static function schedule_anonymize( $order ) {
+		if ( is_a( $order, &#039;WC_Order&#039; ) ) {
+			// Postpone until any pending updates are completed.
+			self::schedule_action( &#039;anonymize&#039;, array( $order-&gt;get_id() ) );
+		}
+	}
+
+	/**
+	 * Schedule an action to delete a single User.
+	 *
+	 * @param int $user_id User ID.
+	 * @return void
+	 */
+	public static function schedule_user_delete( $user_id ) {
+		if ( (int) $user_id &gt; 0 ) {
+			// Postpone until any pending updates are completed.
+			self::schedule_action( &#039;delete_user&#039;, array( $user_id ) );
+		}
+	}
+
+	/**
+	 * Imports a single customer.
+	 *
+	 * @param int $user_id User ID.
+	 * @return void
+	 */
+	public static function import( $user_id ) {
+		CustomersDataStore::update_registered_customer( $user_id );
+	}
+
+	/**
+	 * Delete a batch of customers.
+	 *
+	 * @param int $batch_size Number of items to delete.
+	 * @return void
+	 */
+	public static function delete( $batch_size ) {
+		global $wpdb;
+
+		$customer_ids = $wpdb-&gt;get_col(
+			$wpdb-&gt;prepare(
+				&quot;SELECT customer_id FROM {$wpdb-&gt;prefix}wc_customer_lookup ORDER BY customer_id ASC LIMIT %d&quot;,
+				$batch_size
+			)
+		);
+
+		foreach ( $customer_ids as $customer_id ) {
+			CustomersDataStore::delete_customer( $customer_id );
+		}
+	}
+
+	/**
+	 * Anonymize the customer data for a single order.
+	 *
+	 * @param int $order_id Order id.
+	 * @return void
+	 */
+	public static function anonymize( $order_id ) {
+		global $wpdb;
+
+		$customer_id = $wpdb-&gt;get_var(
+			$wpdb-&gt;prepare( &quot;SELECT customer_id FROM {$wpdb-&gt;prefix}wc_order_stats WHERE order_id = %d&quot;, $order_id )
+		);
+
+		if ( ! $customer_id ) {
+			return;
+		}
+
+		// Long form query because $wpdb-&gt;update rejects [deleted].
+		$deleted_text = __( &#039;[deleted]&#039;, &#039;woocommerce&#039; );
+		$updated      = $wpdb-&gt;query(
+			$wpdb-&gt;prepare(
+				&quot;UPDATE {$wpdb-&gt;prefix}wc_customer_lookup
+					SET
+						user_id = NULL,
+						username = %s,
+						first_name = %s,
+						last_name = %s,
+						email = %s,
+						country = &#039;&#039;,
+						postcode = %s,
+						city = %s,
+						state = %s
+					WHERE
+						customer_id = %d&quot;,
+				array(
+					$deleted_text,
+					$deleted_text,
+					$deleted_text,
+					&#039;deleted@site.invalid&#039;,
+					$deleted_text,
+					$deleted_text,
+					$deleted_text,
+					$customer_id,
+				)
+			)
+		);
+		// If the customer row was anonymized, flush the cache.
+		if ( $updated ) {
+			ReportsCache::invalidate();
+		}
+	}
+
+	/**
+	 * Delete the customer data for a single user.
+	 *
+	 * @param int $user_id User ID.
+	 * @return void
+	 */
+	public static function delete_user( $user_id ) {
+		CustomersDataStore::delete_customer_by_user_id( $user_id );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626086000"></script>
+    <script src="../js/search.js?updated=1626086000"></script>
+</body>
+</html>

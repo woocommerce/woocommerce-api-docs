@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626086003">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626086003">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        </head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -package">
+        <h2 class="phpdocumentor-content__title">WooCommerce</h2>
+
+        
+<h3 id="packages">
+    Packages
+    <a href="#packages" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></dt>
+    </dl>
+
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes and Traits
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-ArgumentResolverInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverInterface">ArgumentResolverInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-ClassNameInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\ClassNameInterface">ClassNameInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-RawArgumentInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\RawArgumentInterface">RawArgumentInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ContainerAwareInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface">ContainerAwareInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Definition-DefinitionAggregateInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionAggregateInterface">DefinitionAggregateInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Definition-DefinitionInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface">DefinitionInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Inflector-InflectorAggregateInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorAggregateInterface">InflectorAggregateInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Inflector-InflectorInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface">InflectorInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ServiceProvider-BootableServiceProviderInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\BootableServiceProviderInterface">BootableServiceProviderInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ServiceProvider-ServiceProviderAggregateInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface">ServiceProviderAggregateInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ServiceProvider-ServiceProviderInterface.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderInterface">ServiceProviderInterface</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-DataStoreInterface.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface">DataStoreInterface</abbr></a></dt>
+        <dd>WooCommerce Reports data store interface.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-ExportableInterface.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\ExportableInterface">ExportableInterface</abbr></a></dt>
+        <dd>WooCommerce Reports exportable controller interface.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Admin-DateTimeProvider-DateTimeProviderInterface.html"><abbr title="\Automattic\WooCommerce\Admin\DateTimeProvider\DateTimeProviderInterface">DateTimeProviderInterface</abbr></a></dt>
+        <dd>DateTime Provider Interface.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Admin-PluginsProvider-PluginsProviderInterface.html"><abbr title="\Automattic\WooCommerce\Admin\PluginsProvider\PluginsProviderInterface">PluginsProviderInterface</abbr></a></dt>
+        <dd>Plugins Provider Interface</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-RuleProcessorInterface.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleProcessorInterface">RuleProcessorInterface</abbr></a></dt>
+        <dd>Rule processor interface</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="../classes/Automattic-WooCommerce-Admin-Schedulers-ImportInterface.html"><abbr title="\Automattic\WooCommerce\Admin\Schedulers\ImportInterface">ImportInterface</abbr></a></dt>
+        <dd></dd>
+    
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-Notes-Run-Db-Update.html"><abbr title="\WC_Notes_Run_Db_Update">WC_Notes_Run_Db_Update</abbr></a></dt>
+        <dd>WC_Notes_Run_Db_Update.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-Meta-Data.html"><abbr title="\WC_Meta_Data">WC_Meta_Data</abbr></a></dt>
+        <dd>Meta data class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></dt>
+        <dd>Main WooCommerce Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-CLI-REST-Command.html"><abbr title="\WC_CLI_REST_Command">WC_CLI_REST_Command</abbr></a></dt>
+        <dd>Main Command for WooCommere CLI.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-CLI-Runner.html"><abbr title="\WC_CLI_Runner">WC_CLI_Runner</abbr></a></dt>
+        <dd>WC API to WC CLI Bridge.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-CLI-Tool-Command.html"><abbr title="\WC_CLI_Tool_Command">WC_CLI_Tool_Command</abbr></a></dt>
+        <dd>Hooks up our system status tools to the CLI.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-CLI-Tracker-Command.html"><abbr title="\WC_CLI_Tracker_Command">WC_CLI_Tracker_Command</abbr></a></dt>
+        <dd>Allows access to tracker snapshot for transparency and debugging.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-CLI-Update-Command.html"><abbr title="\WC_CLI_Update_Command">WC_CLI_Update_Command</abbr></a></dt>
+        <dd>Allows updates via CLI.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-Customizer-Control-Cropping.html"><abbr title="\WC_Customizer_Control_Cropping">WC_Customizer_Control_Cropping</abbr></a></dt>
+        <dd>WC_Customizer_Control_Cropping class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/WC-Shop-Customizer.html"><abbr title="\WC_Shop_Customizer">WC_Shop_Customizer</abbr></a></dt>
+        <dd>WC_Shop_Customizer class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-ClassName.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\ClassName">ClassName</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-ClassNameWithOptionalValue.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\ClassNameWithOptionalValue">ClassNameWithOptionalValue</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-RawArgument.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\RawArgument">RawArgument</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Container.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Container">Container</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Definition-Definition.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Definition\Definition">Definition</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Definition-DefinitionAggregate.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionAggregate">DefinitionAggregate</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Exception-ContainerException.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Exception\ContainerException">ContainerException</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Exception-NotFoundException.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Exception\NotFoundException">NotFoundException</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Inflector-Inflector.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Inflector\Inflector">Inflector</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Inflector-InflectorAggregate.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorAggregate">InflectorAggregate</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ReflectionContainer.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ReflectionContainer">ReflectionContainer</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ServiceProvider-AbstractServiceProvider.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\AbstractServiceProvider">AbstractServiceProvider</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ServiceProvider-ServiceProviderAggregate.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregate">ServiceProviderAggregate</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Coupons.html"><abbr title="\Automattic\WooCommerce\Admin\API\Coupons">Coupons</abbr></a></dt>
+        <dd>Coupons controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Customers.html"><abbr title="\Automattic\WooCommerce\Admin\API\Customers">Customers</abbr></a></dt>
+        <dd>Customers controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Data.html"><abbr title="\Automattic\WooCommerce\Admin\API\Data">Data</abbr></a></dt>
+        <dd>Data controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-DataCountries.html"><abbr title="\Automattic\WooCommerce\Admin\API\DataCountries">DataCountries</abbr></a></dt>
+        <dd>REST API Data countries controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-DataDownloadIPs.html"><abbr title="\Automattic\WooCommerce\Admin\API\DataDownloadIPs">DataDownloadIPs</abbr></a></dt>
+        <dd>Data Download IP controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Init.html"><abbr title="\Automattic\WooCommerce\Admin\API\Init">Init</abbr></a></dt>
+        <dd>Init class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Leaderboards.html"><abbr title="\Automattic\WooCommerce\Admin\API\Leaderboards">Leaderboards</abbr></a></dt>
+        <dd>Leaderboards controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Marketing.html"><abbr title="\Automattic\WooCommerce\Admin\API\Marketing">Marketing</abbr></a></dt>
+        <dd>Marketing Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-MarketingOverview.html"><abbr title="\Automattic\WooCommerce\Admin\API\MarketingOverview">MarketingOverview</abbr></a></dt>
+        <dd>Marketing Overview Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-NavigationFavorites.html"><abbr title="\Automattic\WooCommerce\Admin\API\NavigationFavorites">NavigationFavorites</abbr></a></dt>
+        <dd>REST API Favorites controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-NoteActions.html"><abbr title="\Automattic\WooCommerce\Admin\API\NoteActions">NoteActions</abbr></a></dt>
+        <dd>REST API Admin Note Action controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Notes.html"><abbr title="\Automattic\WooCommerce\Admin\API\Notes">Notes</abbr></a></dt>
+        <dd>REST API Admin Notes controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-OnboardingFreeExtensions.html"><abbr title="\Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions">OnboardingFreeExtensions</abbr></a></dt>
+        <dd>Onboarding Payments Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-OnboardingPayments.html"><abbr title="\Automattic\WooCommerce\Admin\API\OnboardingPayments">OnboardingPayments</abbr></a></dt>
+        <dd>Onboarding Payments Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-OnboardingProfile.html"><abbr title="\Automattic\WooCommerce\Admin\API\OnboardingProfile">OnboardingProfile</abbr></a></dt>
+        <dd>Onboarding Profile controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-OnboardingTasks.html"><abbr title="\Automattic\WooCommerce\Admin\API\OnboardingTasks">OnboardingTasks</abbr></a></dt>
+        <dd>Onboarding Tasks Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-OnboardingThemes.html"><abbr title="\Automattic\WooCommerce\Admin\API\OnboardingThemes">OnboardingThemes</abbr></a></dt>
+        <dd>Onboarding Themes Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Options.html"><abbr title="\Automattic\WooCommerce\Admin\API\Options">Options</abbr></a></dt>
+        <dd>Options Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Orders.html"><abbr title="\Automattic\WooCommerce\Admin\API\Orders">Orders</abbr></a></dt>
+        <dd>Orders controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Plugins.html"><abbr title="\Automattic\WooCommerce\Admin\API\Plugins">Plugins</abbr></a></dt>
+        <dd>Plugins Controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-ProductAttributes.html"><abbr title="\Automattic\WooCommerce\Admin\API\ProductAttributes">ProductAttributes</abbr></a></dt>
+        <dd>Product categories controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-ProductAttributeTerms.html"><abbr title="\Automattic\WooCommerce\Admin\API\ProductAttributeTerms">ProductAttributeTerms</abbr></a></dt>
+        <dd>Product attribute terms controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-ProductCategories.html"><abbr title="\Automattic\WooCommerce\Admin\API\ProductCategories">ProductCategories</abbr></a></dt>
+        <dd>Product categories controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-ProductReviews.html"><abbr title="\Automattic\WooCommerce\Admin\API\ProductReviews">ProductReviews</abbr></a></dt>
+        <dd>Product reviews controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Products.html"><abbr title="\Automattic\WooCommerce\Admin\API\Products">Products</abbr></a></dt>
+        <dd>Products controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-ProductVariations.html"><abbr title="\Automattic\WooCommerce\Admin\API\ProductVariations">ProductVariations</abbr></a></dt>
+        <dd>Product variations controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Cache.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Cache">Cache</abbr></a></dt>
+        <dd>REST API Reports Cache class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Categories-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Categories\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports categories controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Categories-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Categories\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Categories-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Categories\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports coupons controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Coupons\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Coupons\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports coupons stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Coupons\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Coupons\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Coupons-Stats-Segmenter.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\Segmenter">Segmenter</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Customers-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Customers\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports customers controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Customers-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore">DataStore</abbr></a></dt>
+        <dd>Admin\API\Reports\Customers\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Customers-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Customers\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Customers\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Customers-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports customers stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Customers-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Customers\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Customers-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Customers\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\DataStore">DataStore</abbr></a></dt>
+        <dd>Admin\API\Reports\DataStore: Common parent for custom report data stores.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports downloads controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Downloads\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-Files-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\Files\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports downloads files controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Downloads\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports downloads stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Downloads\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Downloads-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Downloads\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Export-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Export\Controller">Controller</abbr></a></dt>
+        <dd>Reports Export controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Import-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Import\Controller">Controller</abbr></a></dt>
+        <dd>Reports Imports controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports orders controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Orders\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Orders\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports orders stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Orders\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Orders\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Orders-Stats-Segmenter.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\Segmenter">Segmenter</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-ParameterException.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\ParameterException">ParameterException</abbr></a></dt>
+        <dd>API\Reports\ParameterException class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-PerformanceIndicators-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\PerformanceIndicators\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports Performance indicators controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports products controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Products\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Products\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports products stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Products\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Products\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Products-Stats-Segmenter.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Products\Stats\Segmenter">Segmenter</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Query">Query</abbr></a></dt>
+        <dd>Admin\API\Reports\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Revenue-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Revenue\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Revenue\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Revenue-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Revenue\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports revenue stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Segmenter.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Segmenter">Segmenter</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-SqlQuery.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\SqlQuery">SqlQuery</abbr></a></dt>
+        <dd>Admin\API\Reports\SqlQuery: Common parent for manipulating SQL query clauses.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Stock-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Stock\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports stock controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Stock-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports stock stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Stock-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Stock\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Stock-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Stock\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports taxes controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Taxes\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Taxes\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports taxes stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Taxes\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Taxes\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Taxes-Stats-Segmenter.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\Segmenter">Segmenter</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-TimeInterval.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\TimeInterval">TimeInterval</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports products controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Variations\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Variations\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-Stats-Controller.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\Controller">Controller</abbr></a></dt>
+        <dd>REST API Reports variations stats controller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-Stats-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\DataStore">DataStore</abbr></a></dt>
+        <dd>API\Reports\Variations\Stats\DataStore.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-Stats-Query.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\Query">Query</abbr></a></dt>
+        <dd>API\Reports\Variations\Stats\Query</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-Variations-Stats-Segmenter.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\Segmenter">Segmenter</abbr></a></dt>
+        <dd>Date &amp; time interval and numeric range handling class for Reporting API.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-SettingOptions.html"><abbr title="\Automattic\WooCommerce\Admin\API\SettingOptions">SettingOptions</abbr></a></dt>
+        <dd>Setting Options controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Taxes.html"><abbr title="\Automattic\WooCommerce\Admin\API\Taxes">Taxes</abbr></a></dt>
+        <dd>Taxes controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-API-Themes.html"><abbr title="\Automattic\WooCommerce\Admin\API\Themes">Themes</abbr></a></dt>
+        <dd>Themes controller.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-CategoryLookup.html"><abbr title="\Automattic\WooCommerce\Admin\CategoryLookup">CategoryLookup</abbr></a></dt>
+        <dd>\Automattic\WooCommerce\Admin\CategoryLookup class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Composer-Package.html"><abbr title="\Automattic\WooCommerce\Admin\Composer\Package">Package</abbr></a></dt>
+        <dd>Main package class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-DateTimeProvider-CurrentDateTimeProvider.html"><abbr title="\Automattic\WooCommerce\Admin\DateTimeProvider\CurrentDateTimeProvider">CurrentDateTimeProvider</abbr></a></dt>
+        <dd>Current DateTime Provider.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-DeprecatedClassFacade.html"><abbr title="\Automattic\WooCommerce\Admin\DeprecatedClassFacade">DeprecatedClassFacade</abbr></a></dt>
+        <dd>A facade to allow deprecating an entire class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Events.html"><abbr title="\Automattic\WooCommerce\Admin\Events">Events</abbr></a></dt>
+        <dd>Events Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-ActivityPanels.html"><abbr title="\Automattic\WooCommerce\Admin\Features\ActivityPanels">ActivityPanels</abbr></a></dt>
+        <dd>Contains backend logic for the activity panel feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Analytics.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Analytics">Analytics</abbr></a></dt>
+        <dd>Contains backend logic for the Analytics feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-AnalyticsDashboard.html"><abbr title="\Automattic\WooCommerce\Admin\Features\AnalyticsDashboard">AnalyticsDashboard</abbr></a></dt>
+        <dd>Contains backend logic for the dashboard feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Coupons.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Coupons">Coupons</abbr></a></dt>
+        <dd>Contains backend logic for the Coupons feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Features.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Features">Features</abbr></a></dt>
+        <dd>Features Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Homescreen.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Homescreen">Homescreen</abbr></a></dt>
+        <dd>Contains backend logic for the homescreen feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Marketing.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Marketing">Marketing</abbr></a></dt>
+        <dd>Contains backend logic for the Marketing feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-MobileAppBanner.html"><abbr title="\Automattic\WooCommerce\Admin\Features\MobileAppBanner">MobileAppBanner</abbr></a></dt>
+        <dd>Determine if the mobile app banner shows on Android devices</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Onboarding.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Onboarding">Onboarding</abbr></a></dt>
+        <dd>Contains backend logic for the onboarding profile and checklist feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-OnboardingTasks.html"><abbr title="\Automattic\WooCommerce\Admin\Features\OnboardingTasks">OnboardingTasks</abbr></a></dt>
+        <dd>Contains the logic for completing onboarding tasks.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-PaymentGatewaySuggestions-DataSourcePoller.html"><abbr title="\Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions\DataSourcePoller">DataSourcePoller</abbr></a></dt>
+        <dd>Specs data source poller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-PaymentGatewaySuggestions-DefaultPaymentGateways.html"><abbr title="\Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions\DefaultPaymentGateways">DefaultPaymentGateways</abbr></a></dt>
+        <dd>Default Payment Gateways</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-PaymentGatewaySuggestions-EvaluateMethod.html"><abbr title="\Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions\EvaluateMethod">EvaluateMethod</abbr></a></dt>
+        <dd>Evaluates the spec and returns the evaluated method.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-PaymentGatewaySuggestions-Init.html"><abbr title="\Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions\Init">Init</abbr></a></dt>
+        <dd>Remote Payment Methods engine.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-PaymentGatewaySuggestions-PaymentGatewaysController.html"><abbr title="\Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions\PaymentGatewaysController">PaymentGatewaysController</abbr></a></dt>
+        <dd>PaymentGateway class</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-RemoteFreeExtensions-DataSourcePoller.html"><abbr title="\Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\DataSourcePoller">DataSourcePoller</abbr></a></dt>
+        <dd>Specs data source poller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-RemoteFreeExtensions-EvaluateExtension.html"><abbr title="\Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension">EvaluateExtension</abbr></a></dt>
+        <dd>Evaluates the spec and returns the evaluated method.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-RemoteFreeExtensions-Init.html"><abbr title="\Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init">Init</abbr></a></dt>
+        <dd>Remote Payment Methods engine.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-Settings.html"><abbr title="\Automattic\WooCommerce\Admin\Features\Settings">Settings</abbr></a></dt>
+        <dd>Contains backend logic for the Settings feature.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-ShippingLabelBanner.html"><abbr title="\Automattic\WooCommerce\Admin\Features\ShippingLabelBanner">ShippingLabelBanner</abbr></a></dt>
+        <dd>Shows print shipping label banner on edit order page.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-ShippingLabelBannerDisplayRules.html"><abbr title="\Automattic\WooCommerce\Admin\Features\ShippingLabelBannerDisplayRules">ShippingLabelBannerDisplayRules</abbr></a></dt>
+        <dd>Determines whether or not the Shipping Label Banner should be displayed</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Features-TransientNotices.html"><abbr title="\Automattic\WooCommerce\Admin\Features\TransientNotices">TransientNotices</abbr></a></dt>
+        <dd>Shows print shipping label banner on edit order page.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Install.html"><abbr title="\Automattic\WooCommerce\Admin\Install">Install</abbr></a></dt>
+        <dd>Install Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Loader.html"><abbr title="\Automattic\WooCommerce\Admin\Loader">Loader</abbr></a></dt>
+        <dd>Loader Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Marketing-InstalledExtensions.html"><abbr title="\Automattic\WooCommerce\Admin\Marketing\InstalledExtensions">InstalledExtensions</abbr></a></dt>
+        <dd>Installed Marketing Extensions class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-AddFirstProduct.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\AddFirstProduct">AddFirstProduct</abbr></a></dt>
+        <dd>Add_First_Product.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-ChooseNiche.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\ChooseNiche">ChooseNiche</abbr></a></dt>
+        <dd>Choose_Niche.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-ChoosingTheme.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\ChoosingTheme">ChoosingTheme</abbr></a></dt>
+        <dd>Giving_Feedback_Notes</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-ConfirmTaxSettings.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\ConfirmTaxSettings">ConfirmTaxSettings</abbr></a></dt>
+        <dd>ConfirmTaxSettings.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-CouponPageMoved.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\CouponPageMoved">CouponPageMoved</abbr></a></dt>
+        <dd>Coupon_Page_Moved class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-DataStore.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\DataStore">DataStore</abbr></a></dt>
+        <dd>WC Admin Note Data Store (Custom Tables)</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-DeactivatePlugin.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\DeactivatePlugin">DeactivatePlugin</abbr></a></dt>
+        <dd>Deactivate_Plugin.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Note.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Note">WC_Admin_Note</abbr></a></dt>
+        <dd>WC_Admin_Note.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes">WC_Admin_Notes</abbr></a></dt>
+        <dd>WC_Admin_Notes.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Choose-Niche.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Choose_Niche">WC_Admin_Notes_Choose_Niche</abbr></a></dt>
+        <dd>WC_Admin_Notes_Choose_Niche.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Coupon-Page-Moved.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Coupon_Page_Moved">WC_Admin_Notes_Coupon_Page_Moved</abbr></a></dt>
+        <dd>WC_Admin_Notes_Coupon_Page_Moved.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Customize-Store-With-Blocks.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Customize_Store_With_Blocks">WC_Admin_Notes_Customize_Store_With_Blocks</abbr></a></dt>
+        <dd>WC_Admin_Notes_Customize_Store_With_Blocks.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Deactivate-Plugin.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Deactivate_Plugin">WC_Admin_Notes_Deactivate_Plugin</abbr></a></dt>
+        <dd>WC_Admin_Notes_Deactivate_Plugin.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Draw-Attention.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Draw_Attention">WC_Admin_Notes_Draw_Attention</abbr></a></dt>
+        <dd>WC_Admin_Notes_Draw_Attention.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Edit-Products-On-The-Move.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Edit_Products_On_The_Move">WC_Admin_Notes_Edit_Products_On_The_Move</abbr></a></dt>
+        <dd>WC_Admin_Notes_Edit_Products_On_The_Move.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-EU-VAT-Number.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_EU_VAT_Number">WC_Admin_Notes_EU_VAT_Number</abbr></a></dt>
+        <dd>WC_Admin_Notes_EU_VAT_Number.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Facebook-Marketing-Expert.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Facebook_Marketing_Expert">WC_Admin_Notes_Facebook_Marketing_Expert</abbr></a></dt>
+        <dd>WC_Admin_Notes_Facebook_Marketing_Expert.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-First-Product.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_First_Product">WC_Admin_Notes_First_Product</abbr></a></dt>
+        <dd>WC_Admin_Notes_First_Product.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Giving-Feedback-Notes.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Giving_Feedback_Notes">WC_Admin_Notes_Giving_Feedback_Notes</abbr></a></dt>
+        <dd>WC_Admin_Notes_Giving_Feedback_Notes.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Insight-First-Sale.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Insight_First_Sale">WC_Admin_Notes_Insight_First_Sale</abbr></a></dt>
+        <dd>WC_Admin_Notes_Insight_First_Sale.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Install-JP-And-WCS-Plugins.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Install_JP_And_WCS_Plugins">WC_Admin_Notes_Install_JP_And_WCS_Plugins</abbr></a></dt>
+        <dd>WC_Admin_Notes_Install_JP_And_WCS_Plugins.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Launch-Checklist.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Launch_Checklist">WC_Admin_Notes_Launch_Checklist</abbr></a></dt>
+        <dd>WC_Admin_Notes_Launch_Checklist.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Marketing.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Marketing">WC_Admin_Notes_Marketing</abbr></a></dt>
+        <dd>WC_Admin_Notes_Marketing.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Migrate-From-Shopify.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Migrate_From_Shopify">WC_Admin_Notes_Migrate_From_Shopify</abbr></a></dt>
+        <dd>WC_Admin_Notes_Migrate_From_Shopify.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Mobile-App.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Mobile_App">WC_Admin_Notes_Mobile_App</abbr></a></dt>
+        <dd>WC_Admin_Notes_Mobile_App.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Need-Some-Inspiration.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Need_Some_Inspiration">WC_Admin_Notes_Need_Some_Inspiration</abbr></a></dt>
+        <dd>WC_Admin_Notes_Need_Some_Inspiration.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-New-Sales-Record.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_New_Sales_Record">WC_Admin_Notes_New_Sales_Record</abbr></a></dt>
+        <dd>WC_Admin_Notes_New_Sales_Record.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Onboarding-Email-Marketing.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Onboarding_Email_Marketing">WC_Admin_Notes_Onboarding_Email_Marketing</abbr></a></dt>
+        <dd>WC_Admin_Notes_Onboarding_Email_Marketing.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Onboarding-Payments.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Onboarding_Payments">WC_Admin_Notes_Onboarding_Payments</abbr></a></dt>
+        <dd>WC_Admin_Notes_Onboarding_Payments.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Online-Clothing-Store.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Online_Clothing_Store">WC_Admin_Notes_Online_Clothing_Store</abbr></a></dt>
+        <dd>WC_Admin_Notes_Online_Clothing_Store.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Order-Milestones.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Order_Milestones">WC_Admin_Notes_Order_Milestones</abbr></a></dt>
+        <dd>WC_Admin_Notes_Order_Milestones.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Performance-On-Mobile.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Performance_On_Mobile">WC_Admin_Notes_Performance_On_Mobile</abbr></a></dt>
+        <dd>WC_Admin_Notes_Performance_On_Mobile.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Personalize-Store.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Personalize_Store">WC_Admin_Notes_Personalize_Store</abbr></a></dt>
+        <dd>WC_Admin_Notes_Personalize_Store.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Real-Time-Order-Alerts.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Real_Time_Order_Alerts">WC_Admin_Notes_Real_Time_Order_Alerts</abbr></a></dt>
+        <dd>WC_Admin_Notes_Real_Time_Order_Alerts.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Selling-Online-Courses.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Selling_Online_Courses">WC_Admin_Notes_Selling_Online_Courses</abbr></a></dt>
+        <dd>WC_Admin_Notes_Selling_Online_Courses.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Set-Up-Additional-Payment-Types.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Set_Up_Additional_Payment_Types">WC_Admin_Notes_Set_Up_Additional_Payment_Types</abbr></a></dt>
+        <dd>WC_Admin_Notes_Set_Up_Additional_Payment_Types.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Start-Dropshipping-Business.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Start_Dropshipping_Business">WC_Admin_Notes_Start_Dropshipping_Business</abbr></a></dt>
+        <dd>WC_Admin_Notes_Start_Dropshipping_Business.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Test-Checkout.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Test_Checkout">WC_Admin_Notes_Test_Checkout</abbr></a></dt>
+        <dd>WC_Admin_Notes_Test_Checkout.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Tracking-Opt-In.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Tracking_Opt_In">WC_Admin_Notes_Tracking_Opt_In</abbr></a></dt>
+        <dd>WC_Admin_Notes_Tracking_Opt_In.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-Woo-Subscriptions-Notes.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Woo_Subscriptions_Notes">WC_Admin_Notes_Woo_Subscriptions_Notes</abbr></a></dt>
+        <dd>WC_Admin_Notes_Woo_Subscriptions_Notes.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-WooCommerce-Payments.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_WooCommerce_Payments">WC_Admin_Notes_WooCommerce_Payments</abbr></a></dt>
+        <dd>WC_Admin_Notes_WooCommerce_Payments.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WC-Admin-Notes-WooCommerce-Subscriptions.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_WooCommerce_Subscriptions">WC_Admin_Notes_WooCommerce_Subscriptions</abbr></a></dt>
+        <dd>WC_Admin_Notes_WooCommerce_Subscriptions.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-DrawAttention.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\DrawAttention">DrawAttention</abbr></a></dt>
+        <dd>Draw_Attention</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-EditProductsOnTheMove.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\EditProductsOnTheMove">EditProductsOnTheMove</abbr></a></dt>
+        <dd>Edit_Products_On_The_Move</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-EUVATNumber.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\EUVATNumber">EUVATNumber</abbr></a></dt>
+        <dd>EU_VAT_Number</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-FilterByProductVariationsInReports.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\FilterByProductVariationsInReports">FilterByProductVariationsInReports</abbr></a></dt>
+        <dd>FilterByProductVariationsInReports.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-FirstDownlaodableProduct.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\FirstDownlaodableProduct">FirstDownlaodableProduct</abbr></a></dt>
+        <dd>FirstDownlaodableProduct.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-FirstProduct.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\FirstProduct">FirstProduct</abbr></a></dt>
+        <dd>First_Product.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-GettingStartedInEcommerceWebinar.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\GettingStartedInEcommerceWebinar">GettingStartedInEcommerceWebinar</abbr></a></dt>
+        <dd>Getting started in ecommmerce note class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-GivingFeedbackNotes.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\GivingFeedbackNotes">GivingFeedbackNotes</abbr></a></dt>
+        <dd>Giving_Feedback_Notes</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-InstallJPAndWCSPlugins.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\InstallJPAndWCSPlugins">InstallJPAndWCSPlugins</abbr></a></dt>
+        <dd>Install_JP_And_WCS_Plugins</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-LaunchChecklist.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\LaunchChecklist">LaunchChecklist</abbr></a></dt>
+        <dd>Launch_Checklist</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-ManageOrdersOnTheGo.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\ManageOrdersOnTheGo">ManageOrdersOnTheGo</abbr></a></dt>
+        <dd>Manage_Orders_On_The_Go</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-ManageStoreActivityFromHomeScreen.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\ManageStoreActivityFromHomeScreen">ManageStoreActivityFromHomeScreen</abbr></a></dt>
+        <dd>New! Manage your store activity from the Home screen.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-Marketing.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\Marketing">Marketing</abbr></a></dt>
+        <dd>Marketing</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-MarketingJetpack.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\MarketingJetpack">MarketingJetpack</abbr></a></dt>
+        <dd>Suggest Jetpack Backup to Woo users.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-MerchantEmailNotifications-MerchantEmailNotifications.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\MerchantEmailNotifications\MerchantEmailNotifications">MerchantEmailNotifications</abbr></a></dt>
+        <dd>Merchant email notifications.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-MerchantEmailNotifications-NotificationEmail.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\MerchantEmailNotifications\NotificationEmail">NotificationEmail</abbr></a></dt>
+        <dd>NotificationEmail Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-MigrateFromShopify.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\MigrateFromShopify">MigrateFromShopify</abbr></a></dt>
+        <dd>Migrate_From_Shopify.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-MobileApp.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\MobileApp">MobileApp</abbr></a></dt>
+        <dd>Mobile_App</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NavigationFeedback.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NavigationFeedback">NavigationFeedback</abbr></a></dt>
+        <dd>NavigationFeedback</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NavigationFeedbackFollowUp.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NavigationFeedbackFollowUp">NavigationFeedbackFollowUp</abbr></a></dt>
+        <dd>NavigationFeedbackFollowUp</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NavigationNudge.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NavigationNudge">NavigationNudge</abbr></a></dt>
+        <dd>Navigation Nudge.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NeedSomeInspiration.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NeedSomeInspiration">NeedSomeInspiration</abbr></a></dt>
+        <dd>Need_Some_Inspiration.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NewSalesRecord.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NewSalesRecord">NewSalesRecord</abbr></a></dt>
+        <dd>New_Sales_Record</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-Note.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\Note">Note</abbr></a></dt>
+        <dd>Note class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-Notes.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\Notes">Notes</abbr></a></dt>
+        <dd>Admin Notes class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NotesUnavailableException.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NotesUnavailableException">NotesUnavailableException</abbr></a></dt>
+        <dd>Notes\NotesUnavailableException class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-OnboardingEmailMarketing.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\OnboardingEmailMarketing">OnboardingEmailMarketing</abbr></a></dt>
+        <dd>Onboarding_Email_Marketing</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-OnboardingPayments.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\OnboardingPayments">OnboardingPayments</abbr></a></dt>
+        <dd>Onboarding_Payments.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-OnlineClothingStore.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\OnlineClothingStore">OnlineClothingStore</abbr></a></dt>
+        <dd>Online_Clothing_Store.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-OrderMilestones.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\OrderMilestones">OrderMilestones</abbr></a></dt>
+        <dd>Order_Milestones</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-PerformanceOnMobile.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\PerformanceOnMobile">PerformanceOnMobile</abbr></a></dt>
+        <dd>Performance_On_Mobile</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-PersonalizeStore.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\PersonalizeStore">PersonalizeStore</abbr></a></dt>
+        <dd>Personalize_Store</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-RealTimeOrderAlerts.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\RealTimeOrderAlerts">RealTimeOrderAlerts</abbr></a></dt>
+        <dd>Real_Time_Order_Alerts</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-SellingOnlineCourses.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\SellingOnlineCourses">SellingOnlineCourses</abbr></a></dt>
+        <dd>Selling_Online_Courses</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-StartDropshippingBusiness.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\StartDropshippingBusiness">StartDropshippingBusiness</abbr></a></dt>
+        <dd>Start_Dropshipping_Business.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-TrackingOptIn.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\TrackingOptIn">TrackingOptIn</abbr></a></dt>
+        <dd>Tracking_Opt_In</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WelcomeToWooCommerceForStoreUsers.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WelcomeToWooCommerceForStoreUsers">WelcomeToWooCommerceForStoreUsers</abbr></a></dt>
+        <dd>Welcome to WooCommerce for store users.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WooCommercePayments.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WooCommercePayments">WooCommercePayments</abbr></a></dt>
+        <dd>WooCommerce_Payments</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WooCommerceSubscriptions.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></dt>
+        <dd>WooCommerce_Subscriptions.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Notes-WooSubscriptionsNotes.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\WooSubscriptionsNotes">WooSubscriptionsNotes</abbr></a></dt>
+        <dd>Woo_Subscriptions_Notes</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Overrides-Order.html"><abbr title="\Automattic\WooCommerce\Admin\Overrides\Order">Order</abbr></a></dt>
+        <dd>WC_Order subclass.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Overrides-OrderRefund.html"><abbr title="\Automattic\WooCommerce\Admin\Overrides\OrderRefund">OrderRefund</abbr></a></dt>
+        <dd>WC_Order_Refund subclass.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Overrides-ThemeUpgrader.html"><abbr title="\Automattic\WooCommerce\Admin\Overrides\ThemeUpgrader">ThemeUpgrader</abbr></a></dt>
+        <dd>Admin\Overrides\ThemeUpgrader Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Overrides-ThemeUpgraderSkin.html"><abbr title="\Automattic\WooCommerce\Admin\Overrides\ThemeUpgraderSkin">ThemeUpgraderSkin</abbr></a></dt>
+        <dd>Admin\Overrides\ThemeUpgraderSkin Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-PageController.html"><abbr title="\Automattic\WooCommerce\Admin\PageController">PageController</abbr></a></dt>
+        <dd>PageController</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-PaymentPlugins.html"><abbr title="\Automattic\WooCommerce\Admin\PaymentPlugins">PaymentPlugins</abbr></a></dt>
+        <dd>Contains backend logic for retrieving payment plugin recommendations.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-PluginsHelper.html"><abbr title="\Automattic\WooCommerce\Admin\PluginsHelper">PluginsHelper</abbr></a></dt>
+        <dd>Class PluginsHelper</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-PluginsInstaller.html"><abbr title="\Automattic\WooCommerce\Admin\PluginsInstaller">PluginsInstaller</abbr></a></dt>
+        <dd>Class PluginsInstaller</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-PluginsProvider-PluginsProvider.html"><abbr title="\Automattic\WooCommerce\Admin\PluginsProvider\PluginsProvider">PluginsProvider</abbr></a></dt>
+        <dd>Plugins Provider.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-BaseLocationCountryRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\BaseLocationCountryRuleProcessor">BaseLocationCountryRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs a comparison operation against the base
+location - country.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-BaseLocationStateRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\BaseLocationStateRuleProcessor">BaseLocationStateRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs a comparison operation against the base
+location - state.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-ComparisonOperation.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\ComparisonOperation">ComparisonOperation</abbr></a></dt>
+        <dd>Compare two operands using the specified operation.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-DataSourcePoller.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\DataSourcePoller">DataSourcePoller</abbr></a></dt>
+        <dd>Specs data source poller class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-EvaluateAndGetStatus.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\EvaluateAndGetStatus">EvaluateAndGetStatus</abbr></a></dt>
+        <dd>Evaluates the spec and returns a status.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-FailRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\FailRuleProcessor">FailRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that fails.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-GetRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\GetRuleProcessor">GetRuleProcessor</abbr></a></dt>
+        <dd>Class encapsulating getting the processor for a given rule type.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-NoteStatusRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\NoteStatusRuleProcessor">NoteStatusRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that compares against the status of another note.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-NotRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\NotRuleProcessor">NotRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that negates the rules in the rule&#039;s operand.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-OnboardingProfileRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\OnboardingProfileRuleProcessor">OnboardingProfileRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs a comparison operation against a value in the
+onboarding profile.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-OptionRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor">OptionRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs a comparison operation against an option value.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-OrderCountRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\OrderCountRuleProcessor">OrderCountRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for publishing based on the number of orders.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-OrdersProvider.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\OrdersProvider">OrdersProvider</abbr></a></dt>
+        <dd>Provider for order-related queries and operations.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-OrRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\OrRuleProcessor">OrRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs an OR operation on the rule&#039;s left and right
+operands.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-PassRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\PassRuleProcessor">PassRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that passes.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-PluginsActivatedRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\PluginsActivatedRuleProcessor">PluginsActivatedRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for sending when the provided plugins are activated.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-PluginVersionRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\PluginVersionRuleProcessor">PluginVersionRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for sending when the provided plugin is activated and
+matches the specified version.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-ProductCountRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\ProductCountRuleProcessor">ProductCountRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs a comparison operation against the number of
+products.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-PublishAfterTimeRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\PublishAfterTimeRuleProcessor">PublishAfterTimeRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for sending after a specified date/time.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-PublishBeforeTimeRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\PublishBeforeTimeRuleProcessor">PublishBeforeTimeRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for sending before a specified date/time.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-RemoteInboxNotificationsEngine.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\RemoteInboxNotificationsEngine">RemoteInboxNotificationsEngine</abbr></a></dt>
+        <dd>Remote Inbox Notifications engine.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-RuleEvaluator.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator">RuleEvaluator</abbr></a></dt>
+        <dd>Evaluate the given rules as an AND operation - return false early if a
+rule evaluates to false.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-SpecRunner.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\SpecRunner">SpecRunner</abbr></a></dt>
+        <dd>Runs a single spec.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-StoredStateRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\StoredStateRuleProcessor">StoredStateRuleProcessor</abbr></a></dt>
+        <dd>Rule processor that performs a comparison operation against a value in the
+stored state object.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-StoredStateSetupForProducts.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\StoredStateSetupForProducts">StoredStateSetupForProducts</abbr></a></dt>
+        <dd>Handles stored state setup for products.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-WCAdminActiveForProvider.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\WCAdminActiveForProvider">WCAdminActiveForProvider</abbr></a></dt>
+        <dd>WCAdminActiveForProvider class</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-WCAdminActiveForRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\WCAdminActiveForRuleProcessor">WCAdminActiveForRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for publishing if wc-admin has been active for at least the
+given number of seconds.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-RemoteInboxNotifications-WooCommerceAdminUpdatedRuleProcessor.html"><abbr title="\Automattic\WooCommerce\Admin\RemoteInboxNotifications\WooCommerceAdminUpdatedRuleProcessor">WooCommerceAdminUpdatedRuleProcessor</abbr></a></dt>
+        <dd>Rule processor for sending when WooCommerce Admin has been updated.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-ReportCSVEmail.html"><abbr title="\Automattic\WooCommerce\Admin\ReportCSVEmail">ReportCSVEmail</abbr></a></dt>
+        <dd>ReportCSVEmail Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-ReportCSVExporter.html"><abbr title="\Automattic\WooCommerce\Admin\ReportCSVExporter">ReportCSVExporter</abbr></a></dt>
+        <dd>ReportCSVExporter Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-ReportExporter.html"><abbr title="\Automattic\WooCommerce\Admin\ReportExporter">ReportExporter</abbr></a></dt>
+        <dd>ReportExporter Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-ReportsSync.html"><abbr title="\Automattic\WooCommerce\Admin\ReportsSync">ReportsSync</abbr></a></dt>
+        <dd>ReportsSync Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Schedulers-CustomersScheduler.html"><abbr title="\Automattic\WooCommerce\Admin\Schedulers\CustomersScheduler">CustomersScheduler</abbr></a></dt>
+        <dd>CustomersScheduler Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Schedulers-ImportScheduler.html"><abbr title="\Automattic\WooCommerce\Admin\Schedulers\ImportScheduler">ImportScheduler</abbr></a></dt>
+        <dd>ImportScheduler class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Schedulers-OrdersScheduler.html"><abbr title="\Automattic\WooCommerce\Admin\Schedulers\OrdersScheduler">OrdersScheduler</abbr></a></dt>
+        <dd>OrdersScheduler Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-Survey.html"><abbr title="\Automattic\WooCommerce\Admin\Survey">Survey</abbr></a></dt>
+        <dd>Survey Class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Admin-WCAdminHelper.html"><abbr title="\Automattic\WooCommerce\Admin\WCAdminHelper">WCAdminHelper</abbr></a></dt>
+        <dd>Class WCAdminHelper</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Autoloader.html"><abbr title="\Automattic\WooCommerce\Autoloader">Autoloader</abbr></a></dt>
+        <dd>Autoloader class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Checkout-Helpers-ReserveStock.html"><abbr title="\Automattic\WooCommerce\Checkout\Helpers\ReserveStock">ReserveStock</abbr></a></dt>
+        <dd>Stock Reservation class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Checkout-Helpers-ReserveStockException.html"><abbr title="\Automattic\WooCommerce\Checkout\Helpers\ReserveStockException">ReserveStockException</abbr></a></dt>
+        <dd>ReserveStockException class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Container.html"><abbr title="\Automattic\WooCommerce\Container">Container</abbr></a></dt>
+        <dd>PSR11 compliant dependency injection container for WooCommerce.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Packages.html"><abbr title="\Automattic\WooCommerce\Packages">Packages</abbr></a></dt>
+        <dd>Packages class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Proxies-ActionsProxy.html"><abbr title="\Automattic\WooCommerce\Proxies\ActionsProxy">ActionsProxy</abbr></a></dt>
+        <dd>Proxy for interacting with WordPress actions and filters.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Proxies-LegacyProxy.html"><abbr title="\Automattic\WooCommerce\Proxies\LegacyProxy">LegacyProxy</abbr></a></dt>
+        <dd>Proxy class to access legacy WooCommerce functionality.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Utilities-ArrayUtil.html"><abbr title="\Automattic\WooCommerce\Utilities\ArrayUtil">ArrayUtil</abbr></a></dt>
+        <dd>A class of utilities for dealing with arrays.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Utilities-NumberUtil.html"><abbr title="\Automattic\WooCommerce\Utilities\NumberUtil">NumberUtil</abbr></a></dt>
+        <dd>A class of utilities for dealing with numbers.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="../classes/Automattic-WooCommerce-Utilities-StringUtil.html"><abbr title="\Automattic\WooCommerce\Utilities\StringUtil">StringUtil</abbr></a></dt>
+        <dd>A class of utilities for dealing with strings.</dd>
+    
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-Argument-ArgumentResolverTrait.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverTrait">ArgumentResolverTrait</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Vendor-League-Container-ContainerAwareTrait.html"><abbr title="\Automattic\WooCommerce\Vendor\League\Container\ContainerAwareTrait">ContainerAwareTrait</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Admin-API-Reports-ExportableTraits.html"><abbr title="\Automattic\WooCommerce\Admin\API\Reports\ExportableTraits">ExportableTraits</abbr></a></dt>
+        <dd>ExportableTraits class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Admin-Features-CouponsMovedTrait.html"><abbr title="\Automattic\WooCommerce\Admin\Features\CouponsMovedTrait">CouponsMovedTrait</abbr></a></dt>
+        <dd>CouponsMovedTrait trait.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Admin-Notes-NoteTraits.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\NoteTraits">NoteTraits</abbr></a></dt>
+        <dd>NoteTraits class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Admin-Notes-OnboardingTraits.html"><abbr title="\Automattic\WooCommerce\Admin\Notes\OnboardingTraits">OnboardingTraits</abbr></a></dt>
+        <dd>OnboardingTraits class, encapsulates onboarding checks and functionality
+that are useful to determining whether to display notes or not.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Admin-Overrides-OrderTraits.html"><abbr title="\Automattic\WooCommerce\Admin\Overrides\OrderTraits">OrderTraits</abbr></a></dt>
+        <dd>OrderTraits class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="../classes/Automattic-WooCommerce-Admin-Schedulers-SchedulerTraits.html"><abbr title="\Automattic\WooCommerce\Admin\Schedulers\SchedulerTraits">SchedulerTraits</abbr></a></dt>
+        <dd>SchedulerTraits class.</dd>
+    </dl>
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                        <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="../namespaces/default.html#function_wc_admin_get_feature_config">wc_admin_get_feature_config()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="../namespaces/default.html#function_WC">WC()</a>
+    <span>
+                        &nbsp;: <a href="../classes/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a>    </span>
+</dt>
+<dd>Returns the main instance of WC.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="../namespaces/default.html#function_wc_get_container">wc_get_container()</a>
+    <span>
+                        &nbsp;: <abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>    </span>
+</dt>
+<dd>Returns the WooCommerce PSR11-compatible object container.</dd>
+
+    </dl>
+
+        
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wc_admin_get_feature_config">
+        wc_admin_get_feature_config()
+        <a href="#function_wc_admin_get_feature_config" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/packages/woocommerce-admin/includes/feature-config.php"><a href="../files/woocommerce-packages-woocommerce-admin-includes-feature-config.html#source-view.5">packages/woocommerce-admin/includes/feature-config.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wc_admin_get_feature_config</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_WC">
+        WC()
+        <a href="#function_WC" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/woocommerce.php"><a href="../files/woocommerce-woocommerce.html#source-view.46">woocommerce.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the main instance of WC.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">WC</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="../classes/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.1</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wc_get_container">
+        wc_get_container()
+        <a href="#function_wc_get_container" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce/woocommerce.php"><a href="../files/woocommerce-woocommerce.html#source-view.57">woocommerce.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the WooCommerce PSR11-compatible object container.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wc_get_container</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>Code in the <code class="prettyprint">includes</code> directory should use the container to get instances of classes in the <code class="prettyprint">src</code> directory.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.4.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+    </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626086003"></script>
+    <script src="../js/search.js?updated=1626086003"></script>
+</body>
+</html>

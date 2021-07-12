@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626085994">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626085994">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-admin-list-table-orders.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * List tables: orders.
+ *
+ * @package WooCommerce\Admin
+ * @version 3.3.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+if ( class_exists( &#039;WC_Admin_List_Table_Orders&#039;, false ) ) {
+	return;
+}
+
+if ( ! class_exists( &#039;WC_Admin_List_Table&#039;, false ) ) {
+	include_once __DIR__ . &#039;/abstract-class-wc-admin-list-table.php&#039;;
+}
+
+/**
+ * WC_Admin_List_Table_Orders Class.
+ */
+class WC_Admin_List_Table_Orders extends WC_Admin_List_Table {
+
+	/**
+	 * Post type.
+	 *
+	 * @var string
+	 */
+	protected $list_table_type = &#039;shop_order&#039;;
+
+	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+		parent::__construct();
+		add_action( &#039;admin_notices&#039;, array( $this, &#039;bulk_admin_notices&#039; ) );
+		add_action( &#039;admin_footer&#039;, array( $this, &#039;order_preview_template&#039; ) );
+		add_filter( &#039;get_search_query&#039;, array( $this, &#039;search_label&#039; ) );
+		add_filter( &#039;query_vars&#039;, array( $this, &#039;add_custom_query_var&#039; ) );
+		add_action( &#039;parse_query&#039;, array( $this, &#039;search_custom_fields&#039; ) );
+	}
+
+	/**
+	 * Render blank state.
+	 */
+	protected function render_blank_state() {
+		echo &#039;&lt;div class=&quot;woocommerce-BlankState&quot;&gt;&#039;;
+
+		echo &#039;&lt;h2 class=&quot;woocommerce-BlankState-message&quot;&gt;&#039; . esc_html__( &#039;When you receive a new order, it will appear here.&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/h2&gt;&#039;;
+
+		echo &#039;&lt;div class=&quot;woocommerce-BlankState-buttons&quot;&gt;&#039;;
+		echo &#039;&lt;a class=&quot;woocommerce-BlankState-cta button-primary button&quot; target=&quot;_blank&quot; href=&quot;https://docs.woocommerce.com/document/managing-orders/?utm_source=blankslate&amp;utm_medium=product&amp;utm_content=ordersdoc&amp;utm_campaign=woocommerceplugin&quot;&gt;&#039; . esc_html__( &#039;Learn more about orders&#039;, &#039;woocommerce&#039; ) . &#039;&lt;/a&gt;&#039;;
+		echo &#039;&lt;/div&gt;&#039;;
+
+		do_action( &#039;wc_marketplace_suggestions_orders_empty_state&#039; );
+
+		echo &#039;&lt;/div&gt;&#039;;
+	}
+
+	/**
+	 * Define primary column.
+	 *
+	 * @return string
+	 */
+	protected function get_primary_column() {
+		return &#039;order_number&#039;;
+	}
+
+	/**
+	 * Get row actions to show in the list table.
+	 *
+	 * @param array   $actions Array of actions.
+	 * @param WP_Post $post Current post object.
+	 * @return array
+	 */
+	protected function get_row_actions( $actions, $post ) {
+		return array();
+	}
+
+	/**
+	 * Define hidden columns.
+	 *
+	 * @return array
+	 */
+	protected function define_hidden_columns() {
+		return array(
+			&#039;shipping_address&#039;,
+			&#039;billing_address&#039;,
+			&#039;wc_actions&#039;,
+		);
+	}
+
+	/**
+	 * Define which columns are sortable.
+	 *
+	 * @param array $columns Existing columns.
+	 * @return array
+	 */
+	public function define_sortable_columns( $columns ) {
+		$custom = array(
+			&#039;order_number&#039; =&gt; &#039;ID&#039;,
+			&#039;order_total&#039;  =&gt; &#039;order_total&#039;,
+			&#039;order_date&#039;   =&gt; &#039;date&#039;,
+		);
+		unset( $columns[&#039;comments&#039;] );
+
+		return wp_parse_args( $custom, $columns );
+	}
+
+	/**
+	 * Define which columns to show on this screen.
+	 *
+	 * @param array $columns Existing columns.
+	 * @return array
+	 */
+	public function define_columns( $columns ) {
+		$show_columns                     = array();
+		$show_columns[&#039;cb&#039;]               = $columns[&#039;cb&#039;];
+		$show_columns[&#039;order_number&#039;]     = __( &#039;Order&#039;, &#039;woocommerce&#039; );
+		$show_columns[&#039;order_date&#039;]       = __( &#039;Date&#039;, &#039;woocommerce&#039; );
+		$show_columns[&#039;order_status&#039;]     = __( &#039;Status&#039;, &#039;woocommerce&#039; );
+		$show_columns[&#039;billing_address&#039;]  = __( &#039;Billing&#039;, &#039;woocommerce&#039; );
+		$show_columns[&#039;shipping_address&#039;] = __( &#039;Ship to&#039;, &#039;woocommerce&#039; );
+		$show_columns[&#039;order_total&#039;]      = __( &#039;Total&#039;, &#039;woocommerce&#039; );
+		$show_columns[&#039;wc_actions&#039;]       = __( &#039;Actions&#039;, &#039;woocommerce&#039; );
+
+		wp_enqueue_script( &#039;wc-orders&#039; );
+
+		return $show_columns;
+	}
+
+	/**
+	 * Define bulk actions.
+	 *
+	 * @param array $actions Existing actions.
+	 * @return array
+	 */
+	public function define_bulk_actions( $actions ) {
+		if ( isset( $actions[&#039;edit&#039;] ) ) {
+			unset( $actions[&#039;edit&#039;] );
+		}
+
+		$actions[&#039;mark_processing&#039;] = __( &#039;Change status to processing&#039;, &#039;woocommerce&#039; );
+		$actions[&#039;mark_on-hold&#039;]    = __( &#039;Change status to on-hold&#039;, &#039;woocommerce&#039; );
+		$actions[&#039;mark_completed&#039;]  = __( &#039;Change status to completed&#039;, &#039;woocommerce&#039; );
+		$actions[&#039;mark_cancelled&#039;]  = __( &#039;Change status to cancelled&#039;, &#039;woocommerce&#039; );
+
+		if ( wc_string_to_bool( get_option( &#039;woocommerce_allow_bulk_remove_personal_data&#039;, &#039;no&#039; ) ) ) {
+			$actions[&#039;remove_personal_data&#039;] = __( &#039;Remove personal data&#039;, &#039;woocommerce&#039; );
+		}
+
+		return $actions;
+	}
+
+	/**
+	 * Pre-fetch any data for the row each column has access to it. the_order global is there for bw compat.
+	 *
+	 * @param int $post_id Post ID being shown.
+	 */
+	protected function prepare_row_data( $post_id ) {
+		global $the_order;
+
+		if ( empty( $this-&gt;object ) || $this-&gt;object-&gt;get_id() !== $post_id ) {
+			$this-&gt;object = wc_get_order( $post_id );
+			$the_order    = $this-&gt;object;
+		}
+	}
+
+	/**
+	 * Render columm: order_number.
+	 */
+	protected function render_order_number_column() {
+		$buyer = &#039;&#039;;
+
+		if ( $this-&gt;object-&gt;get_billing_first_name() || $this-&gt;object-&gt;get_billing_last_name() ) {
+			/* translators: 1: first name 2: last name */
+			$buyer = trim( sprintf( _x( &#039;%1$s %2$s&#039;, &#039;full name&#039;, &#039;woocommerce&#039; ), $this-&gt;object-&gt;get_billing_first_name(), $this-&gt;object-&gt;get_billing_last_name() ) );
+		} elseif ( $this-&gt;object-&gt;get_billing_company() ) {
+			$buyer = trim( $this-&gt;object-&gt;get_billing_company() );
+		} elseif ( $this-&gt;object-&gt;get_customer_id() ) {
+			$user  = get_user_by( &#039;id&#039;, $this-&gt;object-&gt;get_customer_id() );
+			$buyer = ucwords( $user-&gt;display_name );
+		}
+
+		/**
+		 * Filter buyer name in list table orders.
+		 *
+		 * @since 3.7.0
+		 * @param string   $buyer Buyer name.
+		 * @param WC_Order $order Order data.
+		 */
+		$buyer = apply_filters( &#039;woocommerce_admin_order_buyer_name&#039;, $buyer, $this-&gt;object );
+
+		if ( $this-&gt;object-&gt;get_status() === &#039;trash&#039; ) {
+			echo &#039;&lt;strong&gt;#&#039; . esc_attr( $this-&gt;object-&gt;get_order_number() ) . &#039; &#039; . esc_html( $buyer ) . &#039;&lt;/strong&gt;&#039;;
+		} else {
+			echo &#039;&lt;a href=&quot;#&quot; class=&quot;order-preview&quot; data-order-id=&quot;&#039; . absint( $this-&gt;object-&gt;get_id() ) . &#039;&quot; title=&quot;&#039; . esc_attr( __( &#039;Preview&#039;, &#039;woocommerce&#039; ) ) . &#039;&quot;&gt;&#039; . esc_html( __( &#039;Preview&#039;, &#039;woocommerce&#039; ) ) . &#039;&lt;/a&gt;&#039;;
+			echo &#039;&lt;a href=&quot;&#039; . esc_url( admin_url( &#039;post.php?post=&#039; . absint( $this-&gt;object-&gt;get_id() ) ) . &#039;&amp;action=edit&#039; ) . &#039;&quot; class=&quot;order-view&quot;&gt;&lt;strong&gt;#&#039; . esc_attr( $this-&gt;object-&gt;get_order_number() ) . &#039; &#039; . esc_html( $buyer ) . &#039;&lt;/strong&gt;&lt;/a&gt;&#039;;
+		}
+	}
+
+	/**
+	 * Render columm: order_status.
+	 */
+	protected function render_order_status_column() {
+		$tooltip                 = &#039;&#039;;
+		$comment_count           = get_comment_count( $this-&gt;object-&gt;get_id() );
+		$approved_comments_count = absint( $comment_count[&#039;approved&#039;] );
+
+		if ( $approved_comments_count ) {
+			$latest_notes = wc_get_order_notes(
+				array(
+					&#039;order_id&#039; =&gt; $this-&gt;object-&gt;get_id(),
+					&#039;limit&#039;    =&gt; 1,
+					&#039;orderby&#039;  =&gt; &#039;date_created_gmt&#039;,
+				)
+			);
+
+			$latest_note = current( $latest_notes );
+
+			if ( isset( $latest_note-&gt;content ) &amp;&amp; 1 === $approved_comments_count ) {
+				$tooltip = wc_sanitize_tooltip( $latest_note-&gt;content );
+			} elseif ( isset( $latest_note-&gt;content ) ) {
+				/* translators: %d: notes count */
+				$tooltip = wc_sanitize_tooltip( $latest_note-&gt;content . &#039;&lt;br/&gt;&lt;small style=&quot;display:block&quot;&gt;&#039; . sprintf( _n( &#039;Plus %d other note&#039;, &#039;Plus %d other notes&#039;, ( $approved_comments_count - 1 ), &#039;woocommerce&#039; ), $approved_comments_count - 1 ) . &#039;&lt;/small&gt;&#039; );
+			} else {
+				/* translators: %d: notes count */
+				$tooltip = wc_sanitize_tooltip( sprintf( _n( &#039;%d note&#039;, &#039;%d notes&#039;, $approved_comments_count, &#039;woocommerce&#039; ), $approved_comments_count ) );
+			}
+		}
+
+		if ( $tooltip ) {
+			printf( &#039;&lt;mark class=&quot;order-status %s tips&quot; data-tip=&quot;%s&quot;&gt;&lt;span&gt;%s&lt;/span&gt;&lt;/mark&gt;&#039;, esc_attr( sanitize_html_class( &#039;status-&#039; . $this-&gt;object-&gt;get_status() ) ), wp_kses_post( $tooltip ), esc_html( wc_get_order_status_name( $this-&gt;object-&gt;get_status() ) ) );
+		} else {
+			printf( &#039;&lt;mark class=&quot;order-status %s&quot;&gt;&lt;span&gt;%s&lt;/span&gt;&lt;/mark&gt;&#039;, esc_attr( sanitize_html_class( &#039;status-&#039; . $this-&gt;object-&gt;get_status() ) ), esc_html( wc_get_order_status_name( $this-&gt;object-&gt;get_status() ) ) );
+		}
+	}
+
+	/**
+	 * Render columm: order_date.
+	 */
+	protected function render_order_date_column() {
+		$order_timestamp = $this-&gt;object-&gt;get_date_created() ? $this-&gt;object-&gt;get_date_created()-&gt;getTimestamp() : &#039;&#039;;
+
+		if ( ! $order_timestamp ) {
+			echo &#039;&amp;ndash;&#039;;
+			return;
+		}
+
+		// Check if the order was created within the last 24 hours, and not in the future.
+		if ( $order_timestamp &gt; strtotime( &#039;-1 day&#039;, time() ) &amp;&amp; $order_timestamp &lt;= time() ) {
+			$show_date = sprintf(
+				/* translators: %s: human-readable time difference */
+				_x( &#039;%s ago&#039;, &#039;%s = human-readable time difference&#039;, &#039;woocommerce&#039; ),
+				human_time_diff( $this-&gt;object-&gt;get_date_created()-&gt;getTimestamp(), time() )
+			);
+		} else {
+			$show_date = $this-&gt;object-&gt;get_date_created()-&gt;date_i18n( apply_filters( &#039;woocommerce_admin_order_date_format&#039;, __( &#039;M j, Y&#039;, &#039;woocommerce&#039; ) ) );
+		}
+		printf(
+			&#039;&lt;time datetime=&quot;%1$s&quot; title=&quot;%2$s&quot;&gt;%3$s&lt;/time&gt;&#039;,
+			esc_attr( $this-&gt;object-&gt;get_date_created()-&gt;date( &#039;c&#039; ) ),
+			esc_html( $this-&gt;object-&gt;get_date_created()-&gt;date_i18n( get_option( &#039;date_format&#039; ) . &#039; &#039; . get_option( &#039;time_format&#039; ) ) ),
+			esc_html( $show_date )
+		);
+	}
+
+	/**
+	 * Render columm: order_total.
+	 */
+	protected function render_order_total_column() {
+		if ( $this-&gt;object-&gt;get_payment_method_title() ) {
+			/* translators: %s: method */
+			echo &#039;&lt;span class=&quot;tips&quot; data-tip=&quot;&#039; . esc_attr( sprintf( __( &#039;via %s&#039;, &#039;woocommerce&#039; ), $this-&gt;object-&gt;get_payment_method_title() ) ) . &#039;&quot;&gt;&#039; . wp_kses_post( $this-&gt;object-&gt;get_formatted_order_total() ) . &#039;&lt;/span&gt;&#039;;
+		} else {
+			echo wp_kses_post( $this-&gt;object-&gt;get_formatted_order_total() );
+		}
+	}
+
+	/**
+	 * Render columm: wc_actions.
+	 */
+	protected function render_wc_actions_column() {
+		echo &#039;&lt;p&gt;&#039;;
+
+		do_action( &#039;woocommerce_admin_order_actions_start&#039;, $this-&gt;object );
+
+		$actions = array();
+
+		if ( $this-&gt;object-&gt;has_status( array( &#039;pending&#039;, &#039;on-hold&#039; ) ) ) {
+			$actions[&#039;processing&#039;] = array(
+				&#039;url&#039;    =&gt; wp_nonce_url( admin_url( &#039;admin-ajax.php?action=woocommerce_mark_order_status&amp;status=processing&amp;order_id=&#039; . $this-&gt;object-&gt;get_id() ), &#039;woocommerce-mark-order-status&#039; ),
+				&#039;name&#039;   =&gt; __( &#039;Processing&#039;, &#039;woocommerce&#039; ),
+				&#039;action&#039; =&gt; &#039;processing&#039;,
+			);
+		}
+
+		if ( $this-&gt;object-&gt;has_status( array( &#039;pending&#039;, &#039;on-hold&#039;, &#039;processing&#039; ) ) ) {
+			$actions[&#039;complete&#039;] = array(
+				&#039;url&#039;    =&gt; wp_nonce_url( admin_url( &#039;admin-ajax.php?action=woocommerce_mark_order_status&amp;status=completed&amp;order_id=&#039; . $this-&gt;object-&gt;get_id() ), &#039;woocommerce-mark-order-status&#039; ),
+				&#039;name&#039;   =&gt; __( &#039;Complete&#039;, &#039;woocommerce&#039; ),
+				&#039;action&#039; =&gt; &#039;complete&#039;,
+			);
+		}
+
+		$actions = apply_filters( &#039;woocommerce_admin_order_actions&#039;, $actions, $this-&gt;object );
+
+		echo wc_render_action_buttons( $actions ); // WPCS: XSS ok.
+
+		do_action( &#039;woocommerce_admin_order_actions_end&#039;, $this-&gt;object );
+
+		echo &#039;&lt;/p&gt;&#039;;
+	}
+
+	/**
+	 * Render columm: billing_address.
+	 */
+	protected function render_billing_address_column() {
+		$address = $this-&gt;object-&gt;get_formatted_billing_address();
+
+		if ( $address ) {
+			echo esc_html( preg_replace( &#039;#&lt;br\s*/?&gt;#i&#039;, &#039;, &#039;, $address ) );
+
+			if ( $this-&gt;object-&gt;get_payment_method() ) {
+				/* translators: %s: payment method */
+				echo &#039;&lt;span class=&quot;description&quot;&gt;&#039; . sprintf( __( &#039;via %s&#039;, &#039;woocommerce&#039; ), esc_html( $this-&gt;object-&gt;get_payment_method_title() ) ) . &#039;&lt;/span&gt;&#039;; // WPCS: XSS ok.
+			}
+		} else {
+			echo &#039;&amp;ndash;&#039;;
+		}
+	}
+
+	/**
+	 * Render columm: shipping_address.
+	 */
+	protected function render_shipping_address_column() {
+		$address = $this-&gt;object-&gt;get_formatted_shipping_address();
+
+		if ( $address ) {
+			echo &#039;&lt;a target=&quot;_blank&quot; href=&quot;&#039; . esc_url( $this-&gt;object-&gt;get_shipping_address_map_url() ) . &#039;&quot;&gt;&#039; . esc_html( preg_replace( &#039;#&lt;br\s*/?&gt;#i&#039;, &#039;, &#039;, $address ) ) . &#039;&lt;/a&gt;&#039;;
+			if ( $this-&gt;object-&gt;get_shipping_method() ) {
+				/* translators: %s: shipping method */
+				echo &#039;&lt;span class=&quot;description&quot;&gt;&#039; . sprintf( __( &#039;via %s&#039;, &#039;woocommerce&#039; ), esc_html( $this-&gt;object-&gt;get_shipping_method() ) ) . &#039;&lt;/span&gt;&#039;; // WPCS: XSS ok.
+			}
+		} else {
+			echo &#039;&amp;ndash;&#039;;
+		}
+	}
+
+	/**
+	 * Template for order preview.
+	 *
+	 * @since 3.3.0
+	 */
+	public function order_preview_template() {
+		?&gt;
+		&lt;script type=&quot;text/template&quot; id=&quot;tmpl-wc-modal-view-order&quot;&gt;
+			&lt;div class=&quot;wc-backbone-modal wc-order-preview&quot;&gt;
+				&lt;div class=&quot;wc-backbone-modal-content&quot;&gt;
+					&lt;section class=&quot;wc-backbone-modal-main&quot; role=&quot;main&quot;&gt;
+						&lt;header class=&quot;wc-backbone-modal-header&quot;&gt;
+							&lt;mark class=&quot;order-status status-{{ data.status }}&quot;&gt;&lt;span&gt;{{ data.status_name }}&lt;/span&gt;&lt;/mark&gt;
+							&lt;?php /* translators: %s: order ID */ ?&gt;
+							&lt;h1&gt;&lt;?php echo esc_html( sprintf( __( &#039;Order #%s&#039;, &#039;woocommerce&#039; ), &#039;{{ data.order_number }}&#039; ) ); ?&gt;&lt;/h1&gt;
+							&lt;button class=&quot;modal-close modal-close-link dashicons dashicons-no-alt&quot;&gt;
+								&lt;span class=&quot;screen-reader-text&quot;&gt;&lt;?php esc_html_e( &#039;Close modal panel&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/span&gt;
+							&lt;/button&gt;
+						&lt;/header&gt;
+						&lt;article&gt;
+							&lt;?php do_action( &#039;woocommerce_admin_order_preview_start&#039; ); ?&gt;
+
+							&lt;div class=&quot;wc-order-preview-addresses&quot;&gt;
+								&lt;div class=&quot;wc-order-preview-address&quot;&gt;
+									&lt;h2&gt;&lt;?php esc_html_e( &#039;Billing details&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/h2&gt;
+									{{{ data.formatted_billing_address }}}
+
+									&lt;# if ( data.data.billing.email ) { #&gt;
+										&lt;strong&gt;&lt;?php esc_html_e( &#039;Email&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/strong&gt;
+										&lt;a href=&quot;mailto:{{ data.data.billing.email }}&quot;&gt;{{ data.data.billing.email }}&lt;/a&gt;
+									&lt;# } #&gt;
+
+									&lt;# if ( data.data.billing.phone ) { #&gt;
+										&lt;strong&gt;&lt;?php esc_html_e( &#039;Phone&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/strong&gt;
+										&lt;a href=&quot;tel:{{ data.data.billing.phone }}&quot;&gt;{{ data.data.billing.phone }}&lt;/a&gt;
+									&lt;# } #&gt;
+
+									&lt;# if ( data.payment_via ) { #&gt;
+										&lt;strong&gt;&lt;?php esc_html_e( &#039;Payment via&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/strong&gt;
+										{{{ data.payment_via }}}
+									&lt;# } #&gt;
+								&lt;/div&gt;
+								&lt;# if ( data.needs_shipping ) { #&gt;
+									&lt;div class=&quot;wc-order-preview-address&quot;&gt;
+										&lt;h2&gt;&lt;?php esc_html_e( &#039;Shipping details&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/h2&gt;
+										&lt;# if ( data.ship_to_billing ) { #&gt;
+											{{{ data.formatted_billing_address }}}
+										&lt;# } else { #&gt;
+											&lt;a href=&quot;{{ data.shipping_address_map_url }}&quot; target=&quot;_blank&quot;&gt;{{{ data.formatted_shipping_address }}}&lt;/a&gt;
+										&lt;# } #&gt;
+
+										&lt;# if ( data.shipping_via ) { #&gt;
+											&lt;strong&gt;&lt;?php esc_html_e( &#039;Shipping method&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/strong&gt;
+											{{ data.shipping_via }}
+										&lt;# } #&gt;
+									&lt;/div&gt;
+								&lt;# } #&gt;
+
+								&lt;# if ( data.data.customer_note ) { #&gt;
+									&lt;div class=&quot;wc-order-preview-note&quot;&gt;
+										&lt;strong&gt;&lt;?php esc_html_e( &#039;Note&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/strong&gt;
+										{{ data.data.customer_note }}
+									&lt;/div&gt;
+								&lt;# } #&gt;
+							&lt;/div&gt;
+
+							{{{ data.item_html }}}
+
+							&lt;?php do_action( &#039;woocommerce_admin_order_preview_end&#039; ); ?&gt;
+						&lt;/article&gt;
+						&lt;footer&gt;
+							&lt;div class=&quot;inner&quot;&gt;
+								{{{ data.actions_html }}}
+
+								&lt;a class=&quot;button button-primary button-large&quot; aria-label=&quot;&lt;?php esc_attr_e( &#039;Edit this order&#039;, &#039;woocommerce&#039; ); ?&gt;&quot; href=&quot;&lt;?php echo esc_url( admin_url( &#039;post.php?action=edit&#039; ) ); ?&gt;&amp;post={{ data.data.id }}&quot;&gt;&lt;?php esc_html_e( &#039;Edit&#039;, &#039;woocommerce&#039; ); ?&gt;&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;
+					&lt;/section&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;wc-backbone-modal-backdrop modal-close&quot;&gt;&lt;/div&gt;
+		&lt;/script&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Get items to display in the preview as HTML.
+	 *
+	 * @param  WC_Order $order Order object.
+	 * @return string
+	 */
+	public static function get_order_preview_item_html( $order ) {
+		$hidden_order_itemmeta = apply_filters(
+			&#039;woocommerce_hidden_order_itemmeta&#039;,
+			array(
+				&#039;_qty&#039;,
+				&#039;_tax_class&#039;,
+				&#039;_product_id&#039;,
+				&#039;_variation_id&#039;,
+				&#039;_line_subtotal&#039;,
+				&#039;_line_subtotal_tax&#039;,
+				&#039;_line_total&#039;,
+				&#039;_line_tax&#039;,
+				&#039;method_id&#039;,
+				&#039;cost&#039;,
+				&#039;_reduced_stock&#039;,
+				&#039;_restock_refunded_items&#039;,
+			)
+		);
+
+		$line_items = apply_filters( &#039;woocommerce_admin_order_preview_line_items&#039;, $order-&gt;get_items(), $order );
+		$columns    = apply_filters(
+			&#039;woocommerce_admin_order_preview_line_item_columns&#039;,
+			array(
+				&#039;product&#039;  =&gt; __( &#039;Product&#039;, &#039;woocommerce&#039; ),
+				&#039;quantity&#039; =&gt; __( &#039;Quantity&#039;, &#039;woocommerce&#039; ),
+				&#039;tax&#039;      =&gt; __( &#039;Tax&#039;, &#039;woocommerce&#039; ),
+				&#039;total&#039;    =&gt; __( &#039;Total&#039;, &#039;woocommerce&#039; ),
+			),
+			$order
+		);
+
+		if ( ! wc_tax_enabled() ) {
+			unset( $columns[&#039;tax&#039;] );
+		}
+
+		$html = &#039;
+		&lt;div class=&quot;wc-order-preview-table-wrapper&quot;&gt;
+			&lt;table cellspacing=&quot;0&quot; class=&quot;wc-order-preview-table&quot;&gt;
+				&lt;thead&gt;
+					&lt;tr&gt;&#039;;
+
+		foreach ( $columns as $column =&gt; $label ) {
+			$html .= &#039;&lt;th class=&quot;wc-order-preview-table__column--&#039; . esc_attr( $column ) . &#039;&quot;&gt;&#039; . esc_html( $label ) . &#039;&lt;/th&gt;&#039;;
+		}
+
+		$html .= &#039;
+					&lt;/tr&gt;
+				&lt;/thead&gt;
+				&lt;tbody&gt;&#039;;
+
+		foreach ( $line_items as $item_id =&gt; $item ) {
+
+			$product_object = is_callable( array( $item, &#039;get_product&#039; ) ) ? $item-&gt;get_product() : null;
+			$row_class      = apply_filters( &#039;woocommerce_admin_html_order_preview_item_class&#039;, &#039;&#039;, $item, $order );
+
+			$html .= &#039;&lt;tr class=&quot;wc-order-preview-table__item wc-order-preview-table__item--&#039; . esc_attr( $item_id ) . ( $row_class ? &#039; &#039; . esc_attr( $row_class ) : &#039;&#039; ) . &#039;&quot;&gt;&#039;;
+
+			foreach ( $columns as $column =&gt; $label ) {
+				$html .= &#039;&lt;td class=&quot;wc-order-preview-table__column--&#039; . esc_attr( $column ) . &#039;&quot;&gt;&#039;;
+				switch ( $column ) {
+					case &#039;product&#039;:
+						$html .= wp_kses_post( $item-&gt;get_name() );
+
+						if ( $product_object ) {
+							$html .= &#039;&lt;div class=&quot;wc-order-item-sku&quot;&gt;&#039; . esc_html( $product_object-&gt;get_sku() ) . &#039;&lt;/div&gt;&#039;;
+						}
+
+						$meta_data = $item-&gt;get_formatted_meta_data( &#039;&#039; );
+
+						if ( $meta_data ) {
+							$html .= &#039;&lt;table cellspacing=&quot;0&quot; class=&quot;wc-order-item-meta&quot;&gt;&#039;;
+
+							foreach ( $meta_data as $meta_id =&gt; $meta ) {
+								if ( in_array( $meta-&gt;key, $hidden_order_itemmeta, true ) ) {
+									continue;
+								}
+								$html .= &#039;&lt;tr&gt;&lt;th&gt;&#039; . wp_kses_post( $meta-&gt;display_key ) . &#039;:&lt;/th&gt;&lt;td&gt;&#039; . wp_kses_post( force_balance_tags( $meta-&gt;display_value ) ) . &#039;&lt;/td&gt;&lt;/tr&gt;&#039;;
+							}
+							$html .= &#039;&lt;/table&gt;&#039;;
+						}
+						break;
+					case &#039;quantity&#039;:
+						$html .= esc_html( $item-&gt;get_quantity() );
+						break;
+					case &#039;tax&#039;:
+						$html .= wc_price( $item-&gt;get_total_tax(), array( &#039;currency&#039; =&gt; $order-&gt;get_currency() ) );
+						break;
+					case &#039;total&#039;:
+						$html .= wc_price( $item-&gt;get_total(), array( &#039;currency&#039; =&gt; $order-&gt;get_currency() ) );
+						break;
+					default:
+						$html .= apply_filters( &#039;woocommerce_admin_order_preview_line_item_column_&#039; . sanitize_key( $column ), &#039;&#039;, $item, $item_id, $order );
+						break;
+				}
+				$html .= &#039;&lt;/td&gt;&#039;;
+			}
+
+			$html .= &#039;&lt;/tr&gt;&#039;;
+		}
+
+		$html .= &#039;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+		&lt;/div&gt;&#039;;
+
+		return $html;
+	}
+
+	/**
+	 * Get actions to display in the preview as HTML.
+	 *
+	 * @param  WC_Order $order Order object.
+	 * @return string
+	 */
+	public static function get_order_preview_actions_html( $order ) {
+		$actions        = array();
+		$status_actions = array();
+
+		if ( $order-&gt;has_status( array( &#039;pending&#039; ) ) ) {
+			$status_actions[&#039;on-hold&#039;] = array(
+				&#039;url&#039;    =&gt; wp_nonce_url( admin_url( &#039;admin-ajax.php?action=woocommerce_mark_order_status&amp;status=on-hold&amp;order_id=&#039; . $order-&gt;get_id() ), &#039;woocommerce-mark-order-status&#039; ),
+				&#039;name&#039;   =&gt; __( &#039;On-hold&#039;, &#039;woocommerce&#039; ),
+				&#039;title&#039;  =&gt; __( &#039;Change order status to on-hold&#039;, &#039;woocommerce&#039; ),
+				&#039;action&#039; =&gt; &#039;on-hold&#039;,
+			);
+		}
+
+		if ( $order-&gt;has_status( array( &#039;pending&#039;, &#039;on-hold&#039; ) ) ) {
+			$status_actions[&#039;processing&#039;] = array(
+				&#039;url&#039;    =&gt; wp_nonce_url( admin_url( &#039;admin-ajax.php?action=woocommerce_mark_order_status&amp;status=processing&amp;order_id=&#039; . $order-&gt;get_id() ), &#039;woocommerce-mark-order-status&#039; ),
+				&#039;name&#039;   =&gt; __( &#039;Processing&#039;, &#039;woocommerce&#039; ),
+				&#039;title&#039;  =&gt; __( &#039;Change order status to processing&#039;, &#039;woocommerce&#039; ),
+				&#039;action&#039; =&gt; &#039;processing&#039;,
+			);
+		}
+
+		if ( $order-&gt;has_status( array( &#039;pending&#039;, &#039;on-hold&#039;, &#039;processing&#039; ) ) ) {
+			$status_actions[&#039;complete&#039;] = array(
+				&#039;url&#039;    =&gt; wp_nonce_url( admin_url( &#039;admin-ajax.php?action=woocommerce_mark_order_status&amp;status=completed&amp;order_id=&#039; . $order-&gt;get_id() ), &#039;woocommerce-mark-order-status&#039; ),
+				&#039;name&#039;   =&gt; __( &#039;Completed&#039;, &#039;woocommerce&#039; ),
+				&#039;title&#039;  =&gt; __( &#039;Change order status to completed&#039;, &#039;woocommerce&#039; ),
+				&#039;action&#039; =&gt; &#039;complete&#039;,
+			);
+		}
+
+		if ( $status_actions ) {
+			$actions[&#039;status&#039;] = array(
+				&#039;group&#039;   =&gt; __( &#039;Change status: &#039;, &#039;woocommerce&#039; ),
+				&#039;actions&#039; =&gt; $status_actions,
+			);
+		}
+
+		return wc_render_action_buttons( apply_filters( &#039;woocommerce_admin_order_preview_actions&#039;, $actions, $order ) );
+	}
+
+	/**
+	 * Get order details to send to the ajax endpoint for previews.
+	 *
+	 * @param  WC_Order $order Order object.
+	 * @return array
+	 */
+	public static function order_preview_get_order_details( $order ) {
+		if ( ! $order ) {
+			return array();
+		}
+
+		$payment_via      = $order-&gt;get_payment_method_title();
+		$payment_method   = $order-&gt;get_payment_method();
+		$payment_gateways = WC()-&gt;payment_gateways() ? WC()-&gt;payment_gateways-&gt;payment_gateways() : array();
+		$transaction_id   = $order-&gt;get_transaction_id();
+
+		if ( $transaction_id ) {
+
+			$url = isset( $payment_gateways[ $payment_method ] ) ? $payment_gateways[ $payment_method ]-&gt;get_transaction_url( $order ) : false;
+
+			if ( $url ) {
+				$payment_via .= &#039; (&lt;a href=&quot;&#039; . esc_url( $url ) . &#039;&quot; target=&quot;_blank&quot;&gt;&#039; . esc_html( $transaction_id ) . &#039;&lt;/a&gt;)&#039;;
+			} else {
+				$payment_via .= &#039; (&#039; . esc_html( $transaction_id ) . &#039;)&#039;;
+			}
+		}
+
+		$billing_address  = $order-&gt;get_formatted_billing_address();
+		$shipping_address = $order-&gt;get_formatted_shipping_address();
+
+		return apply_filters(
+			&#039;woocommerce_admin_order_preview_get_order_details&#039;,
+			array(
+				&#039;data&#039;                       =&gt; $order-&gt;get_data(),
+				&#039;order_number&#039;               =&gt; $order-&gt;get_order_number(),
+				&#039;item_html&#039;                  =&gt; self::get_order_preview_item_html( $order ),
+				&#039;actions_html&#039;               =&gt; self::get_order_preview_actions_html( $order ),
+				&#039;ship_to_billing&#039;            =&gt; wc_ship_to_billing_address_only(),
+				&#039;needs_shipping&#039;             =&gt; $order-&gt;needs_shipping_address(),
+				&#039;formatted_billing_address&#039;  =&gt; $billing_address ? $billing_address : __( &#039;N/A&#039;, &#039;woocommerce&#039; ),
+				&#039;formatted_shipping_address&#039; =&gt; $shipping_address ? $shipping_address : __( &#039;N/A&#039;, &#039;woocommerce&#039; ),
+				&#039;shipping_address_map_url&#039;   =&gt; $order-&gt;get_shipping_address_map_url(),
+				&#039;payment_via&#039;                =&gt; $payment_via,
+				&#039;shipping_via&#039;               =&gt; $order-&gt;get_shipping_method(),
+				&#039;status&#039;                     =&gt; $order-&gt;get_status(),
+				&#039;status_name&#039;                =&gt; wc_get_order_status_name( $order-&gt;get_status() ),
+			),
+			$order
+		);
+	}
+
+	/**
+	 * Handle bulk actions.
+	 *
+	 * @param  string $redirect_to URL to redirect to.
+	 * @param  string $action      Action name.
+	 * @param  array  $ids         List of ids.
+	 * @return string
+	 */
+	public function handle_bulk_actions( $redirect_to, $action, $ids ) {
+		$ids     = apply_filters( &#039;woocommerce_bulk_action_ids&#039;, array_reverse( array_map( &#039;absint&#039;, $ids ) ), $action, &#039;order&#039; );
+		$changed = 0;
+
+		if ( &#039;remove_personal_data&#039; === $action ) {
+			$report_action = &#039;removed_personal_data&#039;;
+
+			foreach ( $ids as $id ) {
+				$order = wc_get_order( $id );
+
+				if ( $order ) {
+					do_action( &#039;woocommerce_remove_order_personal_data&#039;, $order );
+					$changed++;
+				}
+			}
+		} elseif ( false !== strpos( $action, &#039;mark_&#039; ) ) {
+			$order_statuses = wc_get_order_statuses();
+			$new_status     = substr( $action, 5 ); // Get the status name from action.
+			$report_action  = &#039;marked_&#039; . $new_status;
+
+			// Sanity check: bail out if this is actually not a status, or is not a registered status.
+			if ( isset( $order_statuses[ &#039;wc-&#039; . $new_status ] ) ) {
+				// Initialize payment gateways in case order has hooked status transition actions.
+				WC()-&gt;payment_gateways();
+
+				foreach ( $ids as $id ) {
+					$order = wc_get_order( $id );
+					$order-&gt;update_status( $new_status, __( &#039;Order status changed by bulk edit:&#039;, &#039;woocommerce&#039; ), true );
+					do_action( &#039;woocommerce_order_edit_status&#039;, $id, $new_status );
+					$changed++;
+				}
+			}
+		}
+
+		if ( $changed ) {
+			$redirect_to = add_query_arg(
+				array(
+					&#039;post_type&#039;   =&gt; $this-&gt;list_table_type,
+					&#039;bulk_action&#039; =&gt; $report_action,
+					&#039;changed&#039;     =&gt; $changed,
+					&#039;ids&#039;         =&gt; join( &#039;,&#039;, $ids ),
+				),
+				$redirect_to
+			);
+		}
+
+		return esc_url_raw( $redirect_to );
+	}
+
+	/**
+	 * Show confirmation message that order status changed for number of orders.
+	 */
+	public function bulk_admin_notices() {
+		global $post_type, $pagenow;
+
+		// Bail out if not on shop order list page.
+		if ( &#039;edit.php&#039; !== $pagenow || &#039;shop_order&#039; !== $post_type || ! isset( $_REQUEST[&#039;bulk_action&#039;] ) ) { // WPCS: input var ok, CSRF ok.
+			return;
+		}
+
+		$order_statuses = wc_get_order_statuses();
+		$number         = isset( $_REQUEST[&#039;changed&#039;] ) ? absint( $_REQUEST[&#039;changed&#039;] ) : 0; // WPCS: input var ok, CSRF ok.
+		$bulk_action    = wc_clean( wp_unslash( $_REQUEST[&#039;bulk_action&#039;] ) ); // WPCS: input var ok, CSRF ok.
+
+		// Check if any status changes happened.
+		foreach ( $order_statuses as $slug =&gt; $name ) {
+			if ( &#039;marked_&#039; . str_replace( &#039;wc-&#039;, &#039;&#039;, $slug ) === $bulk_action ) { // WPCS: input var ok, CSRF ok.
+				/* translators: %d: orders count */
+				$message = sprintf( _n( &#039;%d order status changed.&#039;, &#039;%d order statuses changed.&#039;, $number, &#039;woocommerce&#039; ), number_format_i18n( $number ) );
+				echo &#039;&lt;div class=&quot;updated&quot;&gt;&lt;p&gt;&#039; . esc_html( $message ) . &#039;&lt;/p&gt;&lt;/div&gt;&#039;;
+				break;
+			}
+		}
+
+		if ( &#039;removed_personal_data&#039; === $bulk_action ) { // WPCS: input var ok, CSRF ok.
+			/* translators: %d: orders count */
+			$message = sprintf( _n( &#039;Removed personal data from %d order.&#039;, &#039;Removed personal data from %d orders.&#039;, $number, &#039;woocommerce&#039; ), number_format_i18n( $number ) );
+			echo &#039;&lt;div class=&quot;updated&quot;&gt;&lt;p&gt;&#039; . esc_html( $message ) . &#039;&lt;/p&gt;&lt;/div&gt;&#039;;
+		}
+	}
+
+	/**
+	 * See if we should render search filters or not.
+	 */
+	public function restrict_manage_posts() {
+		global $typenow;
+
+		if ( in_array( $typenow, wc_get_order_types( &#039;order-meta-boxes&#039; ), true ) ) {
+			$this-&gt;render_filters();
+		}
+	}
+
+	/**
+	 * Render any custom filters and search inputs for the list table.
+	 */
+	protected function render_filters() {
+		$user_string = &#039;&#039;;
+		$user_id     = &#039;&#039;;
+
+		if ( ! empty( $_GET[&#039;_customer_user&#039;] ) ) { // phpcs:disable WordPress.Security.NonceVerification.Recommended
+			$user_id = absint( $_GET[&#039;_customer_user&#039;] ); // WPCS: input var ok, sanitization ok.
+			$user    = get_user_by( &#039;id&#039;, $user_id );
+
+			$user_string = sprintf(
+				/* translators: 1: user display name 2: user ID 3: user email */
+				esc_html__( &#039;%1$s (#%2$s &amp;ndash; %3$s)&#039;, &#039;woocommerce&#039; ),
+				$user-&gt;display_name,
+				absint( $user-&gt;ID ),
+				$user-&gt;user_email
+			);
+		}
+		?&gt;
+		&lt;select class=&quot;wc-customer-search&quot; name=&quot;_customer_user&quot; data-placeholder=&quot;&lt;?php esc_attr_e( &#039;Filter by registered customer&#039;, &#039;woocommerce&#039; ); ?&gt;&quot; data-allow_clear=&quot;true&quot;&gt;
+			&lt;option value=&quot;&lt;?php echo esc_attr( $user_id ); ?&gt;&quot; selected=&quot;selected&quot;&gt;&lt;?php echo htmlspecialchars( wp_kses_post( $user_string ) ); // htmlspecialchars to prevent XSS when rendered by selectWoo. ?&gt;&lt;/option&gt;
+		&lt;/select&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Handle any filters.
+	 *
+	 * @param array $query_vars Query vars.
+	 * @return array
+	 */
+	public function request_query( $query_vars ) {
+		global $typenow;
+
+		if ( in_array( $typenow, wc_get_order_types( &#039;order-meta-boxes&#039; ), true ) ) {
+			return $this-&gt;query_filters( $query_vars );
+		}
+
+		return $query_vars;
+	}
+
+	/**
+	 * Handle any custom filters.
+	 *
+	 * @param array $query_vars Query vars.
+	 * @return array
+	 */
+	protected function query_filters( $query_vars ) {
+		global $wp_post_statuses;
+
+		// Filter the orders by the posted customer.
+		if ( ! empty( $_GET[&#039;_customer_user&#039;] ) ) { // WPCS: input var ok.
+			// @codingStandardsIgnoreStart.
+			$query_vars[&#039;meta_query&#039;] = array(
+				array(
+					&#039;key&#039;     =&gt; &#039;_customer_user&#039;,
+					&#039;value&#039;   =&gt; (int) $_GET[&#039;_customer_user&#039;], // WPCS: input var ok, sanitization ok.
+					&#039;compare&#039; =&gt; &#039;=&#039;,
+				),
+			);
+			// @codingStandardsIgnoreEnd
+		}
+
+		// Sorting.
+		if ( isset( $query_vars[&#039;orderby&#039;] ) ) {
+			if ( &#039;order_total&#039; === $query_vars[&#039;orderby&#039;] ) {
+				// @codingStandardsIgnoreStart
+				$query_vars = array_merge( $query_vars, array(
+					&#039;meta_key&#039;  =&gt; &#039;_order_total&#039;,
+					&#039;orderby&#039;   =&gt; &#039;meta_value_num&#039;,
+				) );
+				// @codingStandardsIgnoreEnd
+			}
+		}
+
+		// Status.
+		if ( empty( $query_vars[&#039;post_status&#039;] ) ) {
+			$post_statuses = wc_get_order_statuses();
+
+			foreach ( $post_statuses as $status =&gt; $value ) {
+				if ( isset( $wp_post_statuses[ $status ] ) &amp;&amp; false === $wp_post_statuses[ $status ]-&gt;show_in_admin_all_list ) {
+					unset( $post_statuses[ $status ] );
+				}
+			}
+
+			$query_vars[&#039;post_status&#039;] = array_keys( $post_statuses );
+		}
+		return $query_vars;
+	}
+
+	/**
+	 * Change the label when searching orders.
+	 *
+	 * @param mixed $query Current search query.
+	 * @return string
+	 */
+	public function search_label( $query ) {
+		global $pagenow, $typenow;
+
+		if ( &#039;edit.php&#039; !== $pagenow || &#039;shop_order&#039; !== $typenow || ! get_query_var( &#039;shop_order_search&#039; ) || ! isset( $_GET[&#039;s&#039;] ) ) { // phpcs:ignore  WordPress.Security.NonceVerification.Recommended
+			return $query;
+		}
+
+		return wc_clean( wp_unslash( $_GET[&#039;s&#039;] ) ); // WPCS: input var ok, sanitization ok.
+	}
+
+	/**
+	 * Query vars for custom searches.
+	 *
+	 * @param mixed $public_query_vars Array of query vars.
+	 * @return array
+	 */
+	public function add_custom_query_var( $public_query_vars ) {
+		$public_query_vars[] = &#039;shop_order_search&#039;;
+		return $public_query_vars;
+	}
+
+	/**
+	 * Search custom fields as well as content.
+	 *
+	 * @param WP_Query $wp Query object.
+	 */
+	public function search_custom_fields( $wp ) {
+		global $pagenow;
+
+		if ( &#039;edit.php&#039; !== $pagenow || empty( $wp-&gt;query_vars[&#039;s&#039;] ) || &#039;shop_order&#039; !== $wp-&gt;query_vars[&#039;post_type&#039;] || ! isset( $_GET[&#039;s&#039;] ) ) { // phpcs:ignore  WordPress.Security.NonceVerification.Recommended
+			return;
+		}
+
+		$post_ids = wc_order_search( wc_clean( wp_unslash( $_GET[&#039;s&#039;] ) ) ); // WPCS: input var ok, sanitization ok.
+
+		if ( ! empty( $post_ids ) ) {
+			// Remove &quot;s&quot; - we don&#039;t want to search order name.
+			unset( $wp-&gt;query_vars[&#039;s&#039;] );
+
+			// so we know we&#039;re doing this.
+			$wp-&gt;query_vars[&#039;shop_order_search&#039;] = true;
+
+			// Search by found posts.
+			$wp-&gt;query_vars[&#039;post__in&#039;] = array_merge( $post_ids, array( 0 ) );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626085994"></script>
+    <script src="../js/search.js?updated=1626085994"></script>
+</body>
+</html>

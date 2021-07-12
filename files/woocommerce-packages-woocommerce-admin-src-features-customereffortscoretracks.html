@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626085999">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626085999">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">CustomerEffortScoreTracks.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Customer effort score tracks
+ *
+ * @package WooCommerce\Admin\Features
+ */
+
+namespace Automattic\WooCommerce\Admin\Features;
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Triggers customer effort score on several different actions.
+ */
+class CustomerEffortScoreTracks {
+	/**
+	 * Option name for the CES Tracks queue.
+	 */
+	const CES_TRACKS_QUEUE_OPTION_NAME = &#039;woocommerce_ces_tracks_queue&#039;;
+
+	/**
+	 * Option name for the clear CES Tracks queue for page.
+	 */
+	const CLEAR_CES_TRACKS_QUEUE_FOR_PAGE_OPTION_NAME =
+		&#039;woocommerce_clear_ces_tracks_queue_for_page&#039;;
+
+	/**
+	 * Option name for the set of actions that have been shown.
+	 */
+	const SHOWN_FOR_ACTIONS_OPTION_NAME = &#039;woocommerce_ces_shown_for_actions&#039;;
+
+	/**
+	 * Action name for settings change.
+	 */
+	const SETTINGS_CHANGE_ACTION_NAME = &#039;settings_change&#039;;
+
+	/**
+	 * Action name for add product categories.
+	 */
+	const ADD_PRODUCT_CATEGORIES_ACTION_NAME = &#039;add_product_categories&#039;;
+
+	/**
+	 * Action name for add product tags.
+	 */
+	const ADD_PRODUCT_TAGS_ACTION_NAME = &#039;add_product_tags&#039;;
+
+	/*
+	 * Action name for add product attributes.
+	 */
+	const ADD_PRODUCT_ATTRIBUTES_ACTION_NAME = &#039;add_product_attributes&#039;;
+
+	/**
+	 * Action name for import products.
+	 */
+	const IMPORT_PRODUCTS_ACTION_NAME = &#039;import_products&#039;;
+
+	/**
+	 * Action name for search.
+	 */
+	const SEARCH_ACTION_NAME = &#039;ces_search&#039;;
+
+	/**
+	 * Label for the snackbar that appears when a user submits the survey.
+	 *
+	 * @var string
+	 */
+	private $onsubmit_label;
+
+	/**
+	 * Constructor. Sets up filters to hook into WooCommerce.
+	 */
+	public function __construct() {
+		$this-&gt;enable_survey_enqueing_if_tracking_is_enabled();
+	}
+
+	/**
+	 * Add actions that require woocommerce_allow_tracking.
+	 */
+	private function enable_survey_enqueing_if_tracking_is_enabled() {
+		// Only hook up the action handlers if in wp-admin.
+		if ( ! is_admin() ) {
+			return;
+		}
+
+		// Do not hook up the action handlers if a mobile device is used.
+		if ( wp_is_mobile() ) {
+			return;
+		}
+
+		// Only enqueue a survey if tracking is allowed.
+		$allow_tracking = &#039;yes&#039; === get_option( &#039;woocommerce_allow_tracking&#039;, &#039;no&#039; );
+		if ( ! $allow_tracking ) {
+			return;
+		}
+
+		add_action( &#039;admin_init&#039;, array( $this, &#039;maybe_clear_ces_tracks_queue&#039; ) );
+		add_action( &#039;woocommerce_update_options&#039;, array( $this, &#039;run_on_update_options&#039; ), 10, 3 );
+		add_action( &#039;product_cat_add_form&#039;, array( $this, &#039;add_script_track_product_categories&#039; ), 10, 3 );
+		add_action( &#039;product_tag_add_form&#039;, array( $this, &#039;add_script_track_product_tags&#039; ), 10, 3 );
+		add_action( &#039;woocommerce_attribute_added&#039;, array( $this, &#039;run_on_add_product_attributes&#039; ), 10, 3 );
+		add_action( &#039;load-edit.php&#039;, array( $this, &#039;run_on_load_edit_php&#039; ), 10, 3 );
+		add_action( &#039;product_page_product_importer&#039;, array( $this, &#039;run_on_product_import&#039; ), 10, 3 );
+
+		$this-&gt;onsubmit_label = __( &#039;Thank you for your feedback!&#039;, &#039;woocommerce&#039; );
+	}
+
+	/**
+	 * Returns a generated script for tracking tags added on edit-tags.php page.
+	 * CES survey is triggered via direct access to wc/customer-effort-score store
+	 * via wp.data.dispatch method.
+	 *
+	 * Due to lack of options to directly hook ourselves into the ajax post request
+	 * initiated by edit-tags.php page, we infer a successful request by observing
+	 * an increase of the number of rows in tags table
+	 *
+	 * @param string $action Action name for the survey.
+	 * @param string $label Label for the snackbar.
+	 *
+	 * @return string Generated JavaScript to append to page.
+	 */
+	private function get_script_track_edit_php( $action, $label ) {
+		return sprintf(
+			&quot;(function( $ ) {
+				&#039;use strict&#039;;
+				// Hook on submit button and sets a 500ms interval function
+				// to determine successful add tag or otherwise.
+				$(&#039;#addtag #submit&#039;).on( &#039;click&#039;, function() {
+					const initialCount = $(&#039;.tags tbody &gt; tr&#039;).length;
+					const interval = setInterval( function() {
+						if ( $(&#039;.tags tbody &gt; tr&#039;).length &gt; initialCount ) {
+							// New tag detected.
+							clearInterval( interval );
+							wp.data.dispatch(&#039;wc/customer-effort-score&#039;).addCesSurvey( &#039;%s&#039;, &#039;%s&#039;, window.pagenow, window.adminpage, &#039;%s&#039; );
+						} else {
+							// Form is no longer loading, most likely failed.
+							if ( $( &#039;#addtag .submit .spinner.is-active&#039; ).length &lt; 1 ) {
+								clearInterval( interval );
+							}
+						}
+					}, 500 );
+				});
+			})( jQuery );&quot;,
+			esc_js( $action ),
+			esc_js( $label ),
+			esc_js( $this-&gt;onsubmit_label )
+		);
+	}
+
+	/**
+	 * Get the current published product count.
+	 *
+	 * @return integer The current published product count.
+	 */
+	private function get_product_count() {
+		$query         = new \WC_Product_Query(
+			array(
+				&#039;limit&#039;    =&gt; 1,
+				&#039;paginate&#039; =&gt; true,
+				&#039;return&#039;   =&gt; &#039;ids&#039;,
+				&#039;status&#039;   =&gt; array( &#039;publish&#039; ),
+			)
+		);
+		$products      = $query-&gt;get_products();
+		$product_count = intval( $products-&gt;total );
+
+		return $product_count;
+	}
+
+	/**
+	 * Get the current shop order count.
+	 *
+	 * @return integer The current shop order count.
+	 */
+	private function get_shop_order_count() {
+		$query            = new \WC_Order_Query(
+			array(
+				&#039;limit&#039;    =&gt; 1,
+				&#039;paginate&#039; =&gt; true,
+				&#039;return&#039;   =&gt; &#039;ids&#039;,
+			)
+		);
+		$shop_orders      = $query-&gt;get_orders();
+		$shop_order_count = intval( $shop_orders-&gt;total );
+
+		return $shop_order_count;
+	}
+
+	/**
+	 * Return whether the action has already been shown.
+	 *
+	 * @param string $action The action to check.
+	 *
+	 * @return bool Whether the action has already been shown.
+	 */
+	private function has_been_shown( $action ) {
+		$shown_for_features = get_option( self::SHOWN_FOR_ACTIONS_OPTION_NAME, array() );
+		$has_been_shown     = in_array( $action, $shown_for_features, true );
+
+		return $has_been_shown;
+	}
+
+	/**
+	 * Enqueue the item to the CES tracks queue.
+	 *
+	 * @param array $item The item to enqueue.
+	 */
+	private function enqueue_to_ces_tracks( $item ) {
+		$queue = get_option(
+			self::CES_TRACKS_QUEUE_OPTION_NAME,
+			array()
+		);
+
+		$has_duplicate = array_filter(
+			$queue,
+			function ( $queue_item ) use ( $item ) {
+				return $queue_item[&#039;action&#039;] === $item[&#039;action&#039;];
+			}
+		);
+		if ( $has_duplicate ) {
+			return;
+		}
+
+		$queue[] = $item;
+
+		update_option(
+			self::CES_TRACKS_QUEUE_OPTION_NAME,
+			$queue
+		);
+	}
+
+	/**
+	 * Enqueue the CES survey on using search dynamically.
+	 *
+	 * @param string $search_area Search area such as &quot;product&quot; or &quot;shop_order&quot;.
+	 * @param string $page_now Value of window.pagenow.
+	 * @param string $admin_page Value of window.adminpage.
+	 */
+	public function enqueue_ces_survey_for_search( $search_area, $page_now, $admin_page ) {
+		if ( $this-&gt;has_been_shown( self::SEARCH_ACTION_NAME ) ) {
+			return;
+		}
+
+		$this-&gt;enqueue_to_ces_tracks(
+			array(
+				&#039;action&#039;         =&gt; self::SEARCH_ACTION_NAME,
+				&#039;label&#039;          =&gt; __(
+					&#039;How easy was it to use search?&#039;,
+					&#039;woocommerce&#039;
+				),
+				&#039;onsubmit_label&#039; =&gt; $this-&gt;onsubmit_label,
+				&#039;pagenow&#039;        =&gt; $page_now,
+				&#039;adminpage&#039;      =&gt; $admin_page,
+				&#039;props&#039;          =&gt; (object) array(
+					&#039;search_area&#039; =&gt; $search_area,
+				),
+			)
+		);
+	}
+
+	/**
+	 * Maybe clear the CES tracks queue, executed on every page load. If the
+	 * clear option is set it clears the queue. In practice, this executes a
+	 * page load after the queued CES tracks are displayed on the client, which
+	 * sets the clear option.
+	 */
+	public function maybe_clear_ces_tracks_queue() {
+		$clear_ces_tracks_queue_for_page = get_option(
+			self::CLEAR_CES_TRACKS_QUEUE_FOR_PAGE_OPTION_NAME,
+			false
+		);
+
+		if ( ! $clear_ces_tracks_queue_for_page ) {
+			return;
+		}
+
+		$queue           = get_option(
+			self::CES_TRACKS_QUEUE_OPTION_NAME,
+			array()
+		);
+		$remaining_items = array_filter(
+			$queue,
+			function ( $item ) use ( $clear_ces_tracks_queue_for_page ) {
+				return $clear_ces_tracks_queue_for_page[&#039;pagenow&#039;] !== $item[&#039;pagenow&#039;]
+				|| $clear_ces_tracks_queue_for_page[&#039;adminpage&#039;] !== $item[&#039;adminpage&#039;];
+			}
+		);
+
+		update_option(
+			self::CES_TRACKS_QUEUE_OPTION_NAME,
+			array_values( $remaining_items )
+		);
+		update_option( self::CLEAR_CES_TRACKS_QUEUE_FOR_PAGE_OPTION_NAME, false );
+	}
+
+	/**
+	 * Appends a script to footer to trigger CES on adding product categories.
+	 */
+	public function add_script_track_product_categories() {
+		if ( $this-&gt;has_been_shown( self::ADD_PRODUCT_CATEGORIES_ACTION_NAME ) ) {
+			return;
+		}
+
+		wc_enqueue_js(
+			$this-&gt;get_script_track_edit_php(
+				self::ADD_PRODUCT_CATEGORIES_ACTION_NAME,
+				__( &#039;How easy was it to add product category?&#039;, &#039;woocommerce&#039; )
+			)
+		);
+	}
+
+	/**
+	 * Appends a script to footer to trigger CES on adding product tags.
+	 */
+	public function add_script_track_product_tags() {
+		if ( $this-&gt;has_been_shown( self::ADD_PRODUCT_TAGS_ACTION_NAME ) ) {
+			return;
+		}
+
+		wc_enqueue_js(
+			$this-&gt;get_script_track_edit_php(
+				self::ADD_PRODUCT_TAGS_ACTION_NAME,
+				__( &#039;How easy was it to add a product tag?&#039;, &#039;woocommerce&#039; )
+			)
+		);
+	}
+
+	/**
+	 * Maybe enqueue the CES survey on product import, if step is done.
+	 */
+	public function run_on_product_import() {
+		// We&#039;re only interested in when the importer completes.
+		if ( empty( $_GET[&#039;step&#039;] ) || &#039;done&#039; !== $_GET[&#039;step&#039;] ) { // phpcs:ignore CSRF ok.
+			return;
+		}
+
+		if ( $this-&gt;has_been_shown( self::IMPORT_PRODUCTS_ACTION_NAME ) ) {
+			return;
+		}
+
+		$this-&gt;enqueue_to_ces_tracks(
+			array(
+				&#039;action&#039;         =&gt; self::IMPORT_PRODUCTS_ACTION_NAME,
+				&#039;label&#039;          =&gt; __(
+					&#039;How easy was it to import products?&#039;,
+					&#039;woocommerce&#039;
+				),
+				&#039;onsubmit_label&#039; =&gt; $this-&gt;onsubmit_label,
+				&#039;pagenow&#039;        =&gt; &#039;product_page_product_importer&#039;,
+				&#039;adminpage&#039;      =&gt; &#039;product_page_product_importer&#039;,
+				&#039;props&#039;          =&gt; (object) array(),
+			)
+		);
+	}
+
+	/**
+	 * Enqueue the CES survey trigger for setting changes.
+	 */
+	public function run_on_update_options() {
+		// $current_tab is set when WC_Admin_Settings::save_settings is called.
+		global $current_tab;
+		global $current_section;
+
+		if ( $this-&gt;has_been_shown( self::SETTINGS_CHANGE_ACTION_NAME ) ) {
+			return;
+		}
+
+		$props = array(
+			&#039;settings_area&#039; =&gt; $current_tab,
+		);
+
+		if ( $current_section ) {
+			$props[&#039;settings_section&#039;] = $current_section;
+		}
+
+		$this-&gt;enqueue_to_ces_tracks(
+			array(
+				&#039;action&#039;         =&gt; self::SETTINGS_CHANGE_ACTION_NAME,
+				&#039;label&#039;          =&gt; __(
+					&#039;How easy was it to update your settings?&#039;,
+					&#039;woocommerce&#039;
+				),
+				&#039;onsubmit_label&#039; =&gt; $this-&gt;onsubmit_label,
+				&#039;pagenow&#039;        =&gt; &#039;woocommerce_page_wc-settings&#039;,
+				&#039;adminpage&#039;      =&gt; &#039;woocommerce_page_wc-settings&#039;,
+				&#039;props&#039;          =&gt; (object) $props,
+			)
+		);
+	}
+
+	/**
+	 * Enqueue the CES survey on adding new product attributes.
+	 */
+	public function run_on_add_product_attributes() {
+		if ( $this-&gt;has_been_shown( self::ADD_PRODUCT_ATTRIBUTES_ACTION_NAME ) ) {
+			return;
+		}
+
+		$this-&gt;enqueue_to_ces_tracks(
+			array(
+				&#039;action&#039;         =&gt; self::ADD_PRODUCT_ATTRIBUTES_ACTION_NAME,
+				&#039;label&#039;          =&gt; __(
+					&#039;How easy was it to add a product attribute?&#039;,
+					&#039;woocommerce&#039;
+				),
+				&#039;onsubmit_label&#039; =&gt; $this-&gt;onsubmit_label,
+				&#039;pagenow&#039;        =&gt; &#039;product_page_product_attributes&#039;,
+				&#039;adminpage&#039;      =&gt; &#039;product_page_product_attributes&#039;,
+				&#039;props&#039;          =&gt; (object) array(),
+			)
+		);
+	}
+
+	/**
+	 * Determine on initiating CES survey on searching for product or orders.
+	 */
+	public function run_on_load_edit_php() {
+		$allowed_types = array( &#039;product&#039;, &#039;shop_order&#039; );
+		$post_type     = get_current_screen()-&gt;post_type;
+
+		// We&#039;re only interested for certain post types.
+		if ( ! in_array( $post_type, $allowed_types, true ) ) {
+			return;
+		}
+
+		// Determine whether request is search by &quot;s&quot; GET parameter.
+		if ( empty( $_GET[&#039;s&#039;] ) ) { // phpcs:disable WordPress.Security.NonceVerification.Recommended
+			return;
+		}
+
+		$page_now = &#039;edit-&#039; . $post_type;
+		$this-&gt;enqueue_ces_survey_for_search( $post_type, $page_now, &#039;edit-php&#039; );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626085999"></script>
+    <script src="../js/search.js?updated=1626085999"></script>
+</body>
+</html>

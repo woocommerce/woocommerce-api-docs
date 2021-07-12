@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626085999">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626085999">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">Install.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Installation related functions and actions.
+ */
+
+namespace Automattic\WooCommerce\Admin;
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+use Automattic\WooCommerce\Admin\API\Reports\Cache;
+use \Automattic\WooCommerce\Admin\Notes\Notes;
+
+/**
+ * Install Class.
+ */
+class Install {
+	/**
+	 * Plugin version option name.
+	 */
+	const VERSION_OPTION = &#039;woocommerce_admin_version&#039;;
+
+	/**
+	 * DB updates and callbacks that need to be run per version.
+	 *
+	 * @var array
+	 */
+	protected static $db_updates = array(
+		&#039;0.20.1&#039; =&gt; array(
+			&#039;wc_admin_update_0201_order_status_index&#039;,
+			&#039;wc_admin_update_0201_db_version&#039;,
+		),
+		&#039;0.23.0&#039; =&gt; array(
+			&#039;wc_admin_update_0230_rename_gross_total&#039;,
+			&#039;wc_admin_update_0230_db_version&#039;,
+		),
+		&#039;0.25.1&#039; =&gt; array(
+			&#039;wc_admin_update_0251_remove_unsnooze_action&#039;,
+			&#039;wc_admin_update_0251_db_version&#039;,
+		),
+		&#039;1.1.0&#039;  =&gt; array(
+			&#039;wc_admin_update_110_remove_facebook_note&#039;,
+			&#039;wc_admin_update_110_db_version&#039;,
+		),
+		&#039;1.3.0&#039;  =&gt; array(
+			&#039;wc_admin_update_130_remove_dismiss_action_from_tracking_opt_in_note&#039;,
+			&#039;wc_admin_update_130_db_version&#039;,
+		),
+		&#039;1.4.0&#039;  =&gt; array(
+			&#039;wc_admin_update_140_change_deactivate_plugin_note_type&#039;,
+			&#039;wc_admin_update_140_db_version&#039;,
+		),
+		&#039;1.6.0&#039;  =&gt; array(
+			&#039;wc_admin_update_160_remove_facebook_note&#039;,
+			&#039;wc_admin_update_160_db_version&#039;,
+		),
+		&#039;1.7.0&#039;  =&gt; array(
+			&#039;wc_admin_update_170_homescreen_layout&#039;,
+			&#039;wc_admin_update_170_db_version&#039;,
+		),
+	);
+
+	/**
+	 * Migrated option names mapping. New =&gt; old.
+	 *
+	 * @var array
+	 */
+	protected static $migrated_options = array(
+		&#039;woocommerce_onboarding_profile&#039;           =&gt; &#039;wc_onboarding_profile&#039;,
+		&#039;woocommerce_admin_install_timestamp&#039;      =&gt; &#039;wc_admin_install_timestamp&#039;,
+		&#039;woocommerce_onboarding_opt_in&#039;            =&gt; &#039;wc_onboarding_opt_in&#039;,
+		&#039;woocommerce_admin_import_stats&#039;           =&gt; &#039;wc_admin_import_stats&#039;,
+		&#039;woocommerce_admin_version&#039;                =&gt; &#039;wc_admin_version&#039;,
+		&#039;woocommerce_admin_last_orders_milestone&#039;  =&gt; &#039;wc_admin_last_orders_milestone&#039;,
+		&#039;woocommerce_admin-wc-helper-last-refresh&#039; =&gt; &#039;wc-admin-wc-helper-last-refresh&#039;,
+		&#039;woocommerce_admin_report_export_status&#039;   =&gt; &#039;wc_admin_report_export_status&#039;,
+		&#039;woocommerce_task_list_complete&#039;           =&gt; &#039;woocommerce_task_list_complete&#039;,
+		&#039;woocommerce_task_list_hidden&#039;             =&gt; &#039;woocommerce_task_list_hidden&#039;,
+		&#039;woocommerce_extended_task_list_complete&#039;  =&gt; &#039;woocommerce_extended_task_list_complete&#039;,
+		&#039;woocommerce_extended_task_list_hidden&#039;    =&gt; &#039;woocommerce_extended_task_list_hidden&#039;,
+	);
+
+	/**
+	 * Hook in tabs.
+	 */
+	public static function init() {
+		add_action( &#039;init&#039;, array( __CLASS__, &#039;check_version&#039; ), 5 );
+		add_filter( &#039;wpmu_drop_tables&#039;, array( __CLASS__, &#039;wpmu_drop_tables&#039; ) );
+
+		// Add wc-admin report tables to list of WooCommerce tables.
+		add_filter( &#039;woocommerce_install_get_tables&#039;, array( __CLASS__, &#039;add_tables&#039; ) );
+	}
+
+	/**
+	 * Migrate option values to their new keys/names.
+	 */
+	public static function migrate_options() {
+		wc_maybe_define_constant( &#039;WC_ADMIN_MIGRATING_OPTIONS&#039;, true );
+
+		foreach ( self::$migrated_options as $new_option =&gt; $old_option ) {
+			$old_option_value = get_option( $old_option, false );
+
+			// Continue if no option value was previously set.
+			if ( false === $old_option_value ) {
+				continue;
+			}
+
+			if ( &#039;1&#039; === $old_option_value ) {
+				$old_option_value = &#039;yes&#039;;
+			} elseif ( &#039;0&#039; === $old_option_value ) {
+				$old_option_value = &#039;no&#039;;
+			}
+
+			update_option( $new_option, $old_option_value );
+			if ( $new_option !== $old_option ) {
+				delete_option( $old_option );
+			}
+		}
+	}
+
+	/**
+	 * Check WC Admin version and run the updater is required.
+	 *
+	 * This check is done on all requests and runs if the versions do not match.
+	 */
+	public static function check_version() {
+		if ( defined( &#039;IFRAME_REQUEST&#039; ) ) {
+			return;
+		}
+
+		$version_option  = get_option( self::VERSION_OPTION );
+		$requires_update = version_compare( get_option( self::VERSION_OPTION ), WC_ADMIN_VERSION_NUMBER, &#039;&lt;&#039; );
+
+		/*
+		 * When included as part of Core, no `on_activation` hook as been called
+		 * so there is no version in options. Make sure install gets called in this
+		 * case as well as a regular version update
+		 */
+		if ( ! $version_option || $requires_update ) {
+			self::install();
+			/**
+			 * WooCommerce Admin has been installed or updated.
+			 */
+			do_action( &#039;woocommerce_admin_updated&#039; );
+
+			if ( ! $version_option ) {
+				/**
+				 * WooCommerce Admin has been installed.
+				 */
+				do_action( &#039;woocommerce_admin_newly_installed&#039; );
+			}
+
+			if ( $requires_update ) {
+				/**
+				 * An existing installation of WooCommerce Admin has been
+				 * updated.
+				 */
+				do_action( &#039;woocommerce_admin_updated_existing&#039; );
+			}
+		}
+
+		/*
+		 * Add the version option if none is found, as would be the case when
+		 * initialized via Core for the first time.
+		 */
+		if ( ! $version_option ) {
+			add_option( self::VERSION_OPTION, WC_ADMIN_VERSION_NUMBER );
+		}
+	}
+
+	/**
+	 * Install WC Admin.
+	 */
+	public static function install() {
+		if ( ! is_blog_installed() ) {
+			return;
+		}
+
+		// Check if we are not already running this routine.
+		if ( &#039;yes&#039; === get_transient( &#039;wc_admin_installing&#039; ) ) {
+			return;
+		}
+
+		// If we made it till here nothing is running yet, lets set the transient now.
+		set_transient( &#039;wc_admin_installing&#039;, &#039;yes&#039;, MINUTE_IN_SECONDS * 10 );
+		wc_maybe_define_constant( &#039;WC_ADMIN_INSTALLING&#039;, true );
+
+		self::migrate_options();
+		self::create_tables();
+		self::create_events();
+		self::delete_obsolete_notes();
+		self::maybe_update_db_version();
+
+		delete_transient( &#039;wc_admin_installing&#039; );
+
+		// Use add_option() here to avoid overwriting this value with each
+		// plugin version update. We base plugin age off of this value.
+		add_option( &#039;woocommerce_admin_install_timestamp&#039;, time() );
+		do_action( &#039;woocommerce_admin_installed&#039; );
+	}
+
+	/**
+	 * Get database schema.
+	 *
+	 * @return string
+	 */
+	protected static function get_schema() {
+		global $wpdb;
+
+		$collate = $wpdb-&gt;has_cap( &#039;collation&#039; ) ? $wpdb-&gt;get_charset_collate() : &#039;&#039;;
+
+		// Max DB index length. See wp_get_db_schema().
+		$max_index_length = 191;
+
+		$tables = &quot;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_order_stats (
+			order_id bigint(20) unsigned NOT NULL,
+			parent_id bigint(20) unsigned DEFAULT 0 NOT NULL,
+			date_created datetime DEFAULT &#039;0000-00-00 00:00:00&#039; NOT NULL,
+			date_created_gmt datetime DEFAULT &#039;0000-00-00 00:00:00&#039; NOT NULL,
+			num_items_sold int(11) DEFAULT 0 NOT NULL,
+			total_sales double DEFAULT 0 NOT NULL,
+			tax_total double DEFAULT 0 NOT NULL,
+			shipping_total double DEFAULT 0 NOT NULL,
+			net_total double DEFAULT 0 NOT NULL,
+			returning_customer boolean DEFAULT NULL,
+			status varchar(200) NOT NULL,
+			customer_id BIGINT UNSIGNED NOT NULL,
+			PRIMARY KEY (order_id),
+			KEY date_created (date_created),
+			KEY customer_id (customer_id),
+			KEY status (status({$max_index_length}))
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_order_product_lookup (
+			order_item_id BIGINT UNSIGNED NOT NULL,
+			order_id BIGINT UNSIGNED NOT NULL,
+			product_id BIGINT UNSIGNED NOT NULL,
+			variation_id BIGINT UNSIGNED NOT NULL,
+			customer_id BIGINT UNSIGNED NULL,
+			date_created datetime DEFAULT &#039;0000-00-00 00:00:00&#039; NOT NULL,
+			product_qty INT NOT NULL,
+			product_net_revenue double DEFAULT 0 NOT NULL,
+			product_gross_revenue double DEFAULT 0 NOT NULL,
+			coupon_amount double DEFAULT 0 NOT NULL,
+			tax_amount double DEFAULT 0 NOT NULL,
+			shipping_amount double DEFAULT 0 NOT NULL,
+			shipping_tax_amount double DEFAULT 0 NOT NULL,
+			PRIMARY KEY  (order_item_id),
+			KEY order_id (order_id),
+			KEY product_id (product_id),
+			KEY customer_id (customer_id),
+			KEY date_created (date_created)
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_order_tax_lookup (
+			order_id BIGINT UNSIGNED NOT NULL,
+			tax_rate_id BIGINT UNSIGNED NOT NULL,
+			date_created datetime DEFAULT &#039;0000-00-00 00:00:00&#039; NOT NULL,
+			shipping_tax double DEFAULT 0 NOT NULL,
+			order_tax double DEFAULT 0 NOT NULL,
+			total_tax double DEFAULT 0 NOT NULL,
+			PRIMARY KEY (order_id, tax_rate_id),
+			KEY tax_rate_id (tax_rate_id),
+			KEY date_created (date_created)
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_order_coupon_lookup (
+			order_id BIGINT UNSIGNED NOT NULL,
+			coupon_id BIGINT NOT NULL,
+			date_created datetime DEFAULT &#039;0000-00-00 00:00:00&#039; NOT NULL,
+			discount_amount double DEFAULT 0 NOT NULL,
+			PRIMARY KEY (order_id, coupon_id),
+			KEY coupon_id (coupon_id),
+			KEY date_created (date_created)
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_admin_notes (
+			note_id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+			name varchar(255) NOT NULL,
+			type varchar(20) NOT NULL,
+			locale varchar(20) NOT NULL,
+			title longtext NOT NULL,
+			content longtext NOT NULL,
+			content_data longtext NULL default null,
+			status varchar(200) NOT NULL,
+			source varchar(200) NOT NULL,
+			date_created datetime NOT NULL default &#039;0000-00-00 00:00:00&#039;,
+			date_reminder datetime NULL default null,
+			is_snoozable boolean DEFAULT 0 NOT NULL,
+			layout varchar(20) DEFAULT &#039;&#039; NOT NULL,
+			image varchar(200) NULL DEFAULT NULL,
+			is_deleted boolean DEFAULT 0 NOT NULL,
+			icon varchar(200) NOT NULL default &#039;info&#039;,
+			PRIMARY KEY (note_id)
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_admin_note_actions (
+			action_id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+			note_id BIGINT UNSIGNED NOT NULL,
+			name varchar(255) NOT NULL,
+			label varchar(255) NOT NULL,
+			query longtext NOT NULL,
+			status varchar(255) NOT NULL,
+			is_primary boolean DEFAULT 0 NOT NULL,
+			actioned_text varchar(255) NOT NULL,
+			nonce_action varchar(255) NULL DEFAULT NULL,
+			nonce_name varchar(255) NULL DEFAULT NULL,
+			PRIMARY KEY (action_id),
+			KEY note_id (note_id)
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_customer_lookup (
+			customer_id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+			user_id BIGINT UNSIGNED DEFAULT NULL,
+			username varchar(60) DEFAULT &#039;&#039; NOT NULL,
+			first_name varchar(255) NOT NULL,
+			last_name varchar(255) NOT NULL,
+			email varchar(100) NULL default NULL,
+			date_last_active timestamp NULL default null,
+			date_registered timestamp NULL default null,
+			country char(2) DEFAULT &#039;&#039; NOT NULL,
+			postcode varchar(20) DEFAULT &#039;&#039; NOT NULL,
+			city varchar(100) DEFAULT &#039;&#039; NOT NULL,
+			state varchar(100) DEFAULT &#039;&#039; NOT NULL,
+			PRIMARY KEY (customer_id),
+			UNIQUE KEY user_id (user_id),
+			KEY email (email)
+		) $collate;
+		CREATE TABLE {$wpdb-&gt;prefix}wc_category_lookup (
+			category_tree_id BIGINT UNSIGNED NOT NULL,
+			category_id BIGINT UNSIGNED NOT NULL,
+			PRIMARY KEY (category_tree_id,category_id)
+		) $collate;
+		&quot;;
+
+		return $tables;
+	}
+
+	/**
+	 * Create database tables.
+	 */
+	public static function create_tables() {
+		require_once ABSPATH . &#039;wp-admin/includes/upgrade.php&#039;;
+
+		dbDelta( self::get_schema() );
+	}
+
+	/**
+	 * Return a list of tables. Used to make sure all WC Admin tables are dropped
+	 * when uninstalling the plugin in a single site or multi site environment.
+	 *
+	 * @return array WC tables.
+	 */
+	public static function get_tables() {
+		global $wpdb;
+
+		return array(
+			&quot;{$wpdb-&gt;prefix}wc_order_stats&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_order_product_lookup&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_order_tax_lookup&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_order_coupon_lookup&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_admin_notes&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_admin_note_actions&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_customer_lookup&quot;,
+			&quot;{$wpdb-&gt;prefix}wc_category_lookup&quot;,
+		);
+	}
+
+	/**
+	 * Adds new tables.
+	 *
+	 * @param array $wc_tables List of WooCommerce tables.
+	 * @return array
+	 */
+	public static function add_tables( $wc_tables ) {
+		return array_merge(
+			$wc_tables,
+			self::get_tables()
+		);
+	}
+
+	/**
+	 * Uninstall tables when MU blog is deleted.
+	 *
+	 * @param array $tables List of tables that will be deleted by WP.
+	 *
+	 * @return string[]
+	 */
+	public static function wpmu_drop_tables( $tables ) {
+		return array_merge( $tables, self::get_tables() );
+	}
+
+	/**
+	 * Get list of DB update callbacks.
+	 *
+	 * @return array
+	 */
+	public static function get_db_update_callbacks() {
+		return self::$db_updates;
+	}
+
+	/**
+	 * Is a DB update needed?
+	 *
+	 * @return boolean
+	 */
+	public static function needs_db_update() {
+		$current_db_version = get_option( self::VERSION_OPTION, null );
+		$updates            = self::get_db_update_callbacks();
+		$update_versions    = array_keys( $updates );
+		usort( $update_versions, &#039;version_compare&#039; );
+
+		return ! is_null( $current_db_version ) &amp;&amp; version_compare( $current_db_version, end( $update_versions ), &#039;&lt;&#039; );
+	}
+
+	/**
+	 * See if we need to show or run database updates during install.
+	 */
+	private static function maybe_update_db_version() {
+		if ( self::needs_db_update() ) {
+			self::update();
+		} else {
+			self::update_db_version();
+		}
+	}
+
+	/**
+	 * Push all needed DB updates to the queue for processing.
+	 */
+	private static function update() {
+		$current_db_version = get_option( self::VERSION_OPTION );
+		$loop               = 0;
+
+		foreach ( self::get_db_update_callbacks() as $version =&gt; $update_callbacks ) {
+			if ( version_compare( $current_db_version, $version, &#039;&lt;&#039; ) ) {
+				$completed_version_updates = 0;
+
+				foreach ( $update_callbacks as $update_callback ) {
+					$pending_jobs = WC()-&gt;queue()-&gt;search(
+						array(
+							&#039;per_page&#039; =&gt; 1,
+							&#039;hook&#039;     =&gt; &#039;woocommerce_run_update_callback&#039;,
+							&#039;search&#039;   =&gt; wp_json_encode( array( $update_callback ) ),
+							&#039;group&#039;    =&gt; &#039;woocommerce-db-updates&#039;,
+							&#039;status&#039;   =&gt; &#039;pending&#039;,
+						)
+					);
+
+					$complete_jobs = WC()-&gt;queue()-&gt;search(
+						array(
+							&#039;per_page&#039; =&gt; 1,
+							&#039;hook&#039;     =&gt; &#039;woocommerce_run_update_callback&#039;,
+							&#039;search&#039;   =&gt; wp_json_encode( array( $update_callback ) ),
+							&#039;group&#039;    =&gt; &#039;woocommerce-db-updates&#039;,
+							&#039;status&#039;   =&gt; &#039;complete&#039;,
+						)
+					);
+
+					$completed_version_updates += count( $complete_jobs );
+
+					if ( empty( $pending_jobs ) &amp;&amp; empty( $complete_jobs ) ) {
+						WC()-&gt;queue()-&gt;schedule_single(
+							time() + $loop,
+							&#039;woocommerce_run_update_callback&#039;,
+							array( $update_callback ),
+							&#039;woocommerce-db-updates&#039;
+						);
+						Cache::invalidate();
+					}
+
+					$loop++;
+
+				}
+
+				// Users have experienced concurrency issues where all update callbacks
+				// have run but the version option hasn&#039;t been updated. If all the updates
+				// for a version are complete, update the version option to reflect that.
+				// See: https:// github.com/woocommerce/woocommerce-admin/issues/5058.
+				if ( count( $update_callbacks ) === $completed_version_updates ) {
+					self::update_db_version( $version );
+				}
+			}
+		}
+	}
+
+	/**
+	 * Update WC Admin version to current.
+	 *
+	 * @param string|null $version New WooCommerce Admin DB version or null.
+	 */
+	public static function update_db_version( $version = null ) {
+		delete_option( self::VERSION_OPTION );
+		add_option( self::VERSION_OPTION, is_null( $version ) ? WC_ADMIN_VERSION_NUMBER : $version );
+	}
+
+	/**
+	 * Schedule cron events.
+	 */
+	public static function create_events() {
+		if ( ! wp_next_scheduled( &#039;wc_admin_daily&#039; ) ) {
+			wp_schedule_event( time(), &#039;daily&#039;, &#039;wc_admin_daily&#039; );
+		}
+		// Note: this is potentially redundant when the core package exists.
+		wp_schedule_single_event( time() + 10, &#039;generate_category_lookup_table&#039; );
+	}
+
+	/**
+	 * Delete obsolete notes.
+	 */
+	protected static function delete_obsolete_notes() {
+		$obsolete_notes_names = array(
+			&#039;wc-admin-welcome-note&#039;,
+			&#039;wc-admin-store-notice-setting-moved&#039;,
+			&#039;wc-admin-store-notice-giving-feedback&#039;,
+			&#039;wc-admin-learn-more-about-product-settings&#039;,
+			&#039;wc-admin-onboarding-profiler-reminder&#039;,
+			&#039;wc-admin-historical-data&#039;,
+			&#039;wc-admin-review-shipping-settings&#039;,
+			&#039;wc-admin-home-screen-feedback&#039;,
+			&#039;wc-admin-effortless-payments-by-mollie&#039;,
+			&#039;wc-admin-google-ads-and-marketing&#039;,
+		);
+
+		$additional_obsolete_notes_names = apply_filters(
+			&#039;woocommerce_admin_obsolete_notes_names&#039;,
+			array()
+		);
+
+		if ( is_array( $additional_obsolete_notes_names ) ) {
+			$obsolete_notes_names = array_merge(
+				$obsolete_notes_names,
+				$additional_obsolete_notes_names
+			);
+		}
+
+		Notes::delete_notes_with_name( $obsolete_notes_names );
+	}
+
+	/**
+	 * Drop WooCommerce Admin tables.
+	 *
+	 * @return void
+	 */
+	public static function drop_tables() {
+		global $wpdb;
+
+		$tables = self::get_tables();
+
+		foreach ( $tables as $table ) {
+			/* phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared */
+			$wpdb-&gt;query( &quot;DROP TABLE IF EXISTS {$table}&quot; );
+			/* phpcs:enable */
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626085999"></script>
+    <script src="../js/search.js?updated=1626085999"></script>
+</body>
+</html>

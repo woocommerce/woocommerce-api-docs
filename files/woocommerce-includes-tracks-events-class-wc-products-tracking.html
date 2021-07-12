@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626085996">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626085996">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-products-tracking.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Import Tracking
+ *
+ * @package WooCommerce\Tracks
+ */
+
+use Automattic\Jetpack\Constants;
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * This class adds actions to track usage of WooCommerce Products.
+ */
+class WC_Products_Tracking {
+	/**
+	 * Init tracking.
+	 */
+	public function init() {
+		add_action( &#039;load-edit.php&#039;, array( $this, &#039;track_products_view&#039; ), 10 );
+		add_action( &#039;load-edit-tags.php&#039;, array( $this, &#039;track_categories_and_tags_view&#039; ), 10, 2 );
+		add_action( &#039;edit_post&#039;, array( $this, &#039;track_product_updated&#039; ), 10, 2 );
+		add_action( &#039;transition_post_status&#039;, array( $this, &#039;track_product_published&#039; ), 10, 3 );
+		add_action( &#039;created_product_cat&#039;, array( $this, &#039;track_product_category_created&#039; ) );
+		add_action( &#039;add_meta_boxes_product&#039;, array( $this, &#039;track_product_updated_client_side&#039; ), 10 );
+	}
+
+	/**
+	 * Send a Tracks event when the Products page is viewed.
+	 */
+	public function track_products_view() {
+		// We only record Tracks event when no `_wp_http_referer` query arg is set, since
+		// when searching, the request gets sent from the browser twice,
+		// once with the `_wp_http_referer` and once without it.
+		//
+		// Otherwise, we would double-record the view and search events.
+
+		// phpcs:disable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification
+		if (
+			isset( $_GET[&#039;post_type&#039;] )
+			&amp;&amp; &#039;product&#039; === wp_unslash( $_GET[&#039;post_type&#039;] )
+			&amp;&amp; ! isset( $_GET[&#039;_wp_http_referer&#039;] )
+		) {
+			// phpcs:enable
+
+			WC_Tracks::record_event( &#039;products_view&#039; );
+
+			// phpcs:disable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification
+			if (
+				isset( $_GET[&#039;s&#039;] )
+				&amp;&amp; 0 &lt; strlen( sanitize_text_field( wp_unslash( $_GET[&#039;s&#039;] ) ) )
+			) {
+				// phpcs:enable
+
+				WC_Tracks::record_event( &#039;products_search&#039; );
+			}
+		}
+	}
+
+	/**
+	 * Send a Tracks event when the Products Categories and Tags page is viewed.
+	 */
+	public function track_categories_and_tags_view() {
+		// We only record Tracks event when no `_wp_http_referer` query arg is set, since
+		// when searching, the request gets sent from the browser twice,
+		// once with the `_wp_http_referer` and once without it.
+		//
+		// Otherwise, we would double-record the view and search events.
+
+		// phpcs:disable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification
+		if (
+			isset( $_GET[&#039;post_type&#039;] )
+			&amp;&amp; &#039;product&#039; === wp_unslash( $_GET[&#039;post_type&#039;] )
+			&amp;&amp; isset( $_GET[&#039;taxonomy&#039;] )
+			&amp;&amp; ! isset( $_GET[&#039;_wp_http_referer&#039;] )
+		) {
+			$taxonomy = wp_unslash( $_GET[&#039;taxonomy&#039;] );
+			// phpcs:enable
+
+			if ( &#039;product_cat&#039; === $taxonomy ) {
+				WC_Tracks::record_event( &#039;categories_view&#039; );
+			} elseif ( &#039;product_tag&#039; === $taxonomy ) {
+				WC_Tracks::record_event( &#039;tags_view&#039; );
+			}
+
+			// phpcs:disable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification
+			if (
+				isset( $_GET[&#039;s&#039;] )
+				&amp;&amp; 0 &lt; strlen( sanitize_text_field( wp_unslash( $_GET[&#039;s&#039;] ) ) )
+			) {
+				// phpcs:enable
+
+				if ( &#039;product_cat&#039; === $taxonomy ) {
+					WC_Tracks::record_event( &#039;categories_search&#039; );
+				} elseif ( &#039;product_tag&#039; === $taxonomy ) {
+					WC_Tracks::record_event( &#039;tags_search&#039; );
+				}
+			}
+		}
+	}
+
+	/**
+	 * Send a Tracks event when a product is updated.
+	 *
+	 * @param int    $product_id Product id.
+	 * @param object $post       WordPress post.
+	 */
+	public function track_product_updated( $product_id, $post ) {
+		if ( &#039;product&#039; !== $post-&gt;post_type ) {
+			return;
+		}
+
+		$properties = array(
+			&#039;product_id&#039; =&gt; $product_id,
+		);
+
+		WC_Tracks::record_event( &#039;product_edit&#039;, $properties );
+	}
+
+	/**
+	 * Track the Update button being clicked on the client side.
+	 * This is needed because `track_product_updated` (using the `edit_post`
+	 * hook) is called in response to a number of other triggers.
+	 *
+	 * @param WP_Post $post The post, not used.
+	 */
+	public function track_product_updated_client_side( $post ) {
+		wc_enqueue_js(
+			&quot;
+			if ( $( &#039;h1.wp-heading-inline&#039; ).text().trim() === &#039;&quot; . __( &#039;Edit product&#039;, &#039;woocommerce&#039; ) . &quot;&#039;) {
+				var initialStockValue = $( &#039;#_stock&#039; ).val();
+				var hasRecordedEvent = false;
+
+				$( &#039;#publish&#039; ).on( &#039;click&#039;, function() {
+					if ( hasRecordedEvent ) {
+						return;
+					}
+
+					var currentStockValue = $( &#039;#_stock&#039; ).val();
+					var properties = {
+						product_type:			$( &#039;#product-type&#039; ).val(),
+						is_virtual:				$( &#039;#_virtual&#039; ).is( &#039;:checked&#039; ) ? &#039;Y&#039; : &#039;N&#039;,
+						is_downloadable:		$( &#039;#_downloadable&#039; ).is( &#039;:checked&#039; ) ? &#039;Y&#039; : &#039;N&#039;,
+						manage_stock:			$( &#039;#_manage_stock&#039; ).is( &#039;:checked&#039; ) ? &#039;Y&#039; : &#039;N&#039;,
+						stock_quantity_update:	( initialStockValue != currentStockValue ) ? &#039;Y&#039; : &#039;N&#039;,
+					};
+
+					window.wcTracks.recordEvent( &#039;product_update&#039;, properties );
+					hasRecordedEvent = true;
+				} );
+			}
+			&quot;
+		);
+	}
+
+	/**
+	 * Send a Tracks event when a product is published.
+	 *
+	 * @param string $new_status New post_status.
+	 * @param string $old_status Previous post_status.
+	 * @param object $post WordPress post.
+	 */
+	public function track_product_published( $new_status, $old_status, $post ) {
+		if (
+			&#039;product&#039; !== $post-&gt;post_type ||
+			&#039;publish&#039; !== $new_status ||
+			&#039;publish&#039; === $old_status
+		) {
+			return;
+		}
+
+		$properties = array(
+			&#039;product_id&#039; =&gt; $post-&gt;ID,
+		);
+
+		WC_Tracks::record_event( &#039;product_add_publish&#039;, $properties );
+	}
+
+	/**
+	 * Send a Tracks event when a product category is created.
+	 *
+	 * @param int $category_id Category ID.
+	 */
+	public function track_product_category_created( $category_id ) {
+		// phpcs:disable WordPress.Security.NonceVerification.Missing
+		// Only track category creation from the edit product screen or the
+		// category management screen (which both occur via AJAX).
+		if (
+			! Constants::is_defined( &#039;DOING_AJAX&#039; ) ||
+			empty( $_POST[&#039;action&#039;] ) ||
+			(
+				// Product Categories screen.
+				&#039;add-tag&#039; !== $_POST[&#039;action&#039;] &amp;&amp;
+				// Edit Product screen.
+				&#039;add-product_cat&#039; !== $_POST[&#039;action&#039;]
+			)
+		) {
+			return;
+		}
+
+		$category   = get_term( $category_id, &#039;product_cat&#039; );
+		$properties = array(
+			&#039;category_id&#039; =&gt; $category_id,
+			&#039;parent_id&#039;   =&gt; $category-&gt;parent,
+			&#039;page&#039;        =&gt; ( &#039;add-tag&#039; === $_POST[&#039;action&#039;] ) ? &#039;categories&#039; : &#039;product&#039;,
+		);
+		// phpcs:enable
+
+		WC_Tracks::record_event( &#039;product_category_add&#039;, $properties );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626085996"></script>
+    <script src="../js/search.js?updated=1626085996"></script>
+</body>
+</html>

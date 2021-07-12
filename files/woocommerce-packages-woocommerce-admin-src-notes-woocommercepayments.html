@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626086000">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626086000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">WooCommercePayments.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Admin WooCommerce Payments Note Provider.
+ *
+ * Adds a note to the merchant&#039;s inbox showing the benefits of the WooCommerce Payments.
+ */
+
+namespace Automattic\WooCommerce\Admin\Notes;
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * WooCommerce_Payments
+ */
+class WooCommercePayments {
+	/**
+	 * Note traits.
+	 */
+	use NoteTraits;
+
+	/**
+	 * Name of the note for use in the database.
+	 */
+	const NOTE_NAME = &#039;wc-admin-woocommerce-payments&#039;;
+
+	/**
+	 * Name of the note for use in the database.
+	 */
+	const PLUGIN_SLUG = &#039;woocommerce-payments&#039;;
+
+	/**
+	 * Name of the note for use in the database.
+	 */
+	const PLUGIN_FILE = &#039;woocommerce-payments/woocommerce-payments.php&#039;;
+
+	/**
+	 * Attach hooks.
+	 */
+	public function __construct() {
+		add_action( &#039;init&#039;, array( $this, &#039;install_on_action&#039; ) );
+		add_action( &#039;wc-admin-woocommerce-payments_add_note&#039;, array( $this, &#039;add_note&#039; ) );
+	}
+
+	/**
+	 * Maybe add a note on WooCommerce Payments for US based sites older than a week without the plugin installed.
+	 */
+	public static function possibly_add_note() {
+		if ( ! self::wc_admin_active_for( WEEK_IN_SECONDS ) || &#039;US&#039; !== WC()-&gt;countries-&gt;get_base_country() ) {
+			return;
+		}
+
+		$data_store = Notes::load_data_store();
+
+		// We already have this note? Then mark the note as actioned.
+		$note_ids = $data_store-&gt;get_notes_with_name( self::NOTE_NAME );
+		if ( ! empty( $note_ids ) ) {
+
+			$note_id = array_pop( $note_ids );
+			$note    = Notes::get_note( $note_id );
+			if ( false === $note ) {
+				return;
+			}
+
+			// If the WooCommerce Payments plugin was installed after the note was created, make sure it&#039;s marked as actioned.
+			if ( self::is_installed() &amp;&amp; Note::E_WC_ADMIN_NOTE_ACTIONED !== $note-&gt;get_status() ) {
+				$note-&gt;set_status( Note::E_WC_ADMIN_NOTE_ACTIONED );
+				$note-&gt;save();
+			}
+
+			return;
+		}
+
+		$current_date = new \DateTime();
+		$publish_date = new \DateTime( &#039;2020-04-14&#039; );
+
+		if ( $current_date &gt;= $publish_date ) {
+
+			$note = self::get_note();
+			if ( self::can_be_added() ) {
+				$note-&gt;save();
+			}
+
+			return;
+
+		} else {
+
+			$hook_name = sprintf( &#039;%s_add_note&#039;, self::NOTE_NAME );
+
+			if ( ! WC()-&gt;queue()-&gt;get_next( $hook_name ) ) {
+				WC()-&gt;queue()-&gt;schedule_single( $publish_date-&gt;getTimestamp(), $hook_name );
+			}
+		}
+	}
+
+	/**
+	 * Add a note about WooCommerce Payments.
+	 *
+	 * @return Note
+	 */
+	public static function get_note() {
+		$note = new Note();
+		$note-&gt;set_title( __( &#039;Try the new way to get paid&#039;, &#039;woocommerce&#039; ) );
+		$note-&gt;set_content(
+			__( &#039;Securely accept credit and debit cards on your site. Manage transactions without leaving your WordPress dashboard. Only with &lt;strong&gt;WooCommerce Payments&lt;/strong&gt;.&#039;, &#039;woocommerce&#039; ) .
+			&#039;&lt;br&gt;&lt;br&gt;&#039; .
+			sprintf(
+				/* translators: 1: opening link tag, 2: closing tag */
+				__( &#039;By clicking &quot;Get started&quot;, you agree to our %1$sTerms of Service%2$s&#039;, &#039;woocommerce&#039; ),
+				&#039;&lt;a href=&quot;https://wordpress.com/tos/&quot; target=&quot;_blank&quot;&gt;&#039;,
+				&#039;&lt;/a&gt;&#039;
+			)
+		);
+		$note-&gt;set_content_data( (object) array() );
+		$note-&gt;set_type( Note::E_WC_ADMIN_NOTE_MARKETING );
+		$note-&gt;set_name( self::NOTE_NAME );
+		$note-&gt;set_source( &#039;woocommerce-admin&#039; );
+		$note-&gt;add_action( &#039;learn-more&#039;, __( &#039;Learn more&#039;, &#039;woocommerce&#039; ), &#039;https://woocommerce.com/payments/&#039;, Note::E_WC_ADMIN_NOTE_UNACTIONED );
+		$note-&gt;add_action( &#039;get-started&#039;, __( &#039;Get started&#039;, &#039;woocommerce&#039; ), wc_admin_url( &#039;&amp;action=setup-woocommerce-payments&#039; ), Note::E_WC_ADMIN_NOTE_ACTIONED, true );
+
+		// Create the note as &quot;actioned&quot; if the plugin is already installed.
+		if ( self::is_installed() ) {
+			$note-&gt;set_status( Note::E_WC_ADMIN_NOTE_ACTIONED );
+		}
+		return $note;
+	}
+
+
+	/**
+	 * Check if the WooCommerce Payments plugin is active or installed.
+	 */
+	protected static function is_installed() {
+		if ( defined( &#039;WC_Payments&#039; ) ) {
+			return true;
+		}
+		include_once ABSPATH . &#039;/wp-admin/includes/plugin.php&#039;;
+		return 0 === validate_plugin( self::PLUGIN_FILE );
+	}
+
+	/**
+	 * Install and activate WooCommerce Payments.
+	 *
+	 * @return boolean Whether the plugin was successfully activated.
+	 */
+	private function install_and_activate_wcpay() {
+		$install_request = array( &#039;plugins&#039; =&gt; self::PLUGIN_SLUG );
+		$installer       = new \Automattic\WooCommerce\Admin\API\Plugins();
+		$result          = $installer-&gt;install_plugins( $install_request );
+		if ( is_wp_error( $result ) ) {
+			return false;
+		}
+
+		wc_admin_record_tracks_event( &#039;woocommerce_payments_install&#039;, array( &#039;context&#039; =&gt; &#039;inbox&#039; ) );
+
+		$activate_request = array( &#039;plugins&#039; =&gt; self::PLUGIN_SLUG );
+		$result           = $installer-&gt;activate_plugins( $activate_request );
+		if ( is_wp_error( $result ) ) {
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * Install &amp; activate WooCommerce Payments plugin, and redirect to setup.
+	 */
+	public function install_on_action() {
+		// TODO: Need to validate this request more strictly since we&#039;re taking install actions directly?
+		/* phpcs:disable WordPress.Security.NonceVerification */
+		if (
+			! isset( $_GET[&#039;page&#039;] ) ||
+			&#039;wc-admin&#039; !== $_GET[&#039;page&#039;] ||
+			! isset( $_GET[&#039;action&#039;] ) ||
+			&#039;setup-woocommerce-payments&#039; !== $_GET[&#039;action&#039;]
+		) {
+			return;
+		}
+		/* phpcs:enable */
+
+		if ( ! current_user_can( &#039;install_plugins&#039; ) ) {
+			return;
+		}
+
+		$this-&gt;install_and_activate_wcpay();
+
+		// WooCommerce Payments is installed at this point, so link straight into the onboarding flow.
+		$connect_url = add_query_arg(
+			array(
+				&#039;wcpay-connect&#039; =&gt; &#039;1&#039;,
+				&#039;_wpnonce&#039;      =&gt; wp_create_nonce( &#039;wcpay-connect&#039; ),
+			),
+			admin_url()
+		);
+		wp_safe_redirect( $connect_url );
+		exit;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626086000"></script>
+    <script src="../js/search.js?updated=1626086000"></script>
+</body>
+</html>

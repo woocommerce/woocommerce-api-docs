@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1626085993">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1626085993">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/automattic-woocommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-Classes.html"><abbr title="\WooCommerce\Classes">Classes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Abstracts.html"><abbr title="\WooCommerce\Abstracts">Abstracts</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Admin.html"><abbr title="\WooCommerce\Admin">Admin</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Views.html"><abbr title="\WooCommerce\Views">Views</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Helper.html"><abbr title="\WooCommerce\Helper">Helper</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Templates.html"><abbr title="\WooCommerce\Templates">Templates</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Reports.html"><abbr title="\WooCommerce\Reports">Reports</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Blocks.html"><abbr title="\WooCommerce\Blocks">Blocks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-RestApi.html"><abbr title="\WooCommerce\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-CLI.html"><abbr title="\WooCommerce\CLI">CLI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-l10n.html"><abbr title="\WooCommerce\l10n">l10n</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Webhooks.html"><abbr title="\WooCommerce\Webhooks">Webhooks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-DataStores.html"><abbr title="\WooCommerce\DataStores">DataStores</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Emails.html"><abbr title="\WooCommerce\Emails">Emails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Export.html"><abbr title="\WooCommerce\Export">Export</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Gateways.html"><abbr title="\WooCommerce\Gateways">Gateways</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PayPal.html"><abbr title="\WooCommerce\PayPal">PayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Import.html"><abbr title="\WooCommerce\Import">Import</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Integrations.html"><abbr title="\WooCommerce\Integrations">Integrations</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interfaces.html"><abbr title="\WooCommerce\Interfaces">Interfaces</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Interface.html"><abbr title="\WooCommerce\Interface">Interface</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-LogHandlers.html"><abbr title="\WooCommerce\LogHandlers">LogHandlers</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-PaymentTokens.html"><abbr title="\WooCommerce\PaymentTokens">PaymentTokens</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Utilities.html"><abbr title="\WooCommerce\Utilities">Utilities</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shipping.html"><abbr title="\WooCommerce\Shipping">Shipping</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Shortcodes.html"><abbr title="\WooCommerce\Shortcodes">Shortcodes</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Tracks.html"><abbr title="\WooCommerce\Tracks">Tracks</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Traits.html"><abbr title="\WooCommerce\Traits">Traits</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Functions.html"><abbr title="\WooCommerce\Functions">Functions</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-WCCom.html"><abbr title="\WooCommerce\WCCom">WCCom</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Widgets.html"><abbr title="\WooCommerce\Widgets">Widgets</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-Uninstaller.html"><abbr title="\WooCommerce\Uninstaller">Uninstaller</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceAdmin.html"><abbr title="\WoocommerceAdmin">WoocommerceAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WoocommerceNavigation.html"><abbr title="\WoocommerceNavigation">WoocommerceNavigation</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/Automattic.html"><abbr title="\Automattic">Automattic</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/Automattic-WooCommerce.html"><abbr title="\Automattic\WooCommerce">WooCommerce</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-admin-dashboard-setup.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Admin Dashboard - Setup
+ *
+ * @package     WooCommerce\Admin
+ * @version     2.1.0
+ */
+
+use Automattic\Jetpack\Constants;
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly.
+}
+
+if ( ! class_exists( &#039;WC_Admin_Dashboard_Setup&#039;, false ) ) :
+
+	/**
+	 * WC_Admin_Dashboard_Setup Class.
+	 */
+	class WC_Admin_Dashboard_Setup {
+
+		/**
+		 * List of tasks.
+		 *
+		 * @var array
+		 */
+		private $tasks = array(
+			&#039;store_details&#039;        =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;path=%2Fsetup-wizard&#039;,
+			),
+			&#039;products&#039;             =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;task=products&#039;,
+			),
+			&#039;woocommerce-payments&#039; =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;path=%2Fpayments%2Fconnect&#039;,
+			),
+			&#039;payments&#039;             =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;task=payments&#039;,
+			),
+			&#039;tax&#039;                  =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;task=tax&#039;,
+			),
+			&#039;shipping&#039;             =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;task=shipping&#039;,
+			),
+			&#039;appearance&#039;           =&gt; array(
+				&#039;completed&#039;   =&gt; false,
+				&#039;button_link&#039; =&gt; &#039;admin.php?page=wc-admin&amp;task=appearance&#039;,
+			),
+		);
+
+		/**
+		 * # of completed tasks.
+		 *
+		 * @var int
+		 */
+		private $completed_tasks_count = 0;
+
+		/**
+		 * WC_Admin_Dashboard_Setup constructor.
+		 */
+		public function __construct() {
+			if ( $this-&gt;should_display_widget() ) {
+				$this-&gt;populate_general_tasks();
+				$this-&gt;populate_payment_tasks();
+				$this-&gt;completed_tasks_count = $this-&gt;get_completed_tasks_count();
+				add_meta_box(
+					&#039;wc_admin_dashboard_setup&#039;,
+					__( &#039;WooCommerce Setup&#039;, &#039;woocommerce&#039; ),
+					array( $this, &#039;render&#039; ),
+					&#039;dashboard&#039;,
+					&#039;normal&#039;,
+					&#039;high&#039;
+				);
+			}
+		}
+
+		/**
+		 * Render meta box output.
+		 */
+		public function render() {
+			$version = Constants::get_constant( &#039;WC_VERSION&#039; );
+			wp_enqueue_style( &#039;wc-dashboard-setup&#039;, WC()-&gt;plugin_url() . &#039;/assets/css/dashboard-setup.css&#039;, array(), $version );
+
+			$task = $this-&gt;get_next_task();
+			if ( ! $task ) {
+				return;
+			}
+
+			$button_link           = $task[&#039;button_link&#039;];
+			$completed_tasks_count = $this-&gt;completed_tasks_count;
+			$tasks_count           = count( $this-&gt;tasks );
+
+			// Given &#039;r&#039; (circle element&#039;s r attr), dashoffset = ((100-$desired_percentage)/100) * PI * (r*2).
+			$progress_percentage = ( $completed_tasks_count / $tasks_count ) * 100;
+			$circle_r            = 6.5;
+			$circle_dashoffset   = ( ( 100 - $progress_percentage ) / 100 ) * ( pi() * ( $circle_r * 2 ) );
+
+			include __DIR__ . &#039;/views/html-admin-dashboard-setup.php&#039;;
+		}
+
+		/**
+		 * Populate tasks from the database.
+		 */
+		private function populate_general_tasks() {
+			$tasks = get_option( &#039;woocommerce_task_list_tracked_completed_tasks&#039;, array() );
+			foreach ( $tasks as $task ) {
+				if ( isset( $this-&gt;tasks[ $task ] ) ) {
+					$this-&gt;tasks[ $task ][&#039;completed&#039;]   = true;
+					$this-&gt;tasks[ $task ][&#039;button_link&#039;] = wc_admin_url( $this-&gt;tasks[ $task ][&#039;button_link&#039;] );
+				}
+			}
+		}
+
+		/**
+		 * Getter for $tasks
+		 *
+		 * @return array
+		 */
+		public function get_tasks() {
+			return $this-&gt;tasks;
+		}
+
+		/**
+		 * Return # of completed tasks
+		 */
+		public function get_completed_tasks_count() {
+			$completed_tasks = array_filter(
+				$this-&gt;tasks,
+				function( $task ) {
+					return $task[&#039;completed&#039;];
+				}
+			);
+
+			return count( $completed_tasks );
+		}
+
+		/**
+		 * Get the next task.
+		 *
+		 * @return array|null
+		 */
+		private function get_next_task() {
+			foreach ( $this-&gt;get_tasks() as $task ) {
+				if ( false === $task[&#039;completed&#039;] ) {
+					return $task;
+				}
+			}
+
+			return null;
+		}
+
+		/**
+		 * Check to see if we should display the widget
+		 *
+		 * @return bool
+		 */
+		private function should_display_widget() {
+			return WC()-&gt;is_wc_admin_active() &amp;&amp;
+				&#039;yes&#039; !== get_option( &#039;woocommerce_task_list_complete&#039; ) &amp;&amp;
+				&#039;yes&#039; !== get_option( &#039;woocommerce_task_list_hidden&#039; );
+		}
+
+		/**
+		 * Populate payment tasks&#039;s visibility and completion
+		 */
+		private function populate_payment_tasks() {
+			$is_woo_payment_installed = is_plugin_active( &#039;woocommerce-payments/woocommerce-payments.php&#039; );
+			$country                  = explode( &#039;:&#039;, get_option( &#039;woocommerce_default_country&#039;, &#039;US:CA&#039; ) )[0];
+
+			// woocommerce-payments requires its plugin activated and country must be US.
+			if ( ! $is_woo_payment_installed || &#039;US&#039; !== $country ) {
+				unset( $this-&gt;tasks[&#039;woocommerce-payments&#039;] );
+			}
+
+			// payments can&#039;t be used when woocommerce-payments exists and country is US.
+			if ( $is_woo_payment_installed &amp;&amp; &#039;US&#039; === $country ) {
+				unset( $this-&gt;tasks[&#039;payments&#039;] );
+			}
+
+			if ( isset( $this-&gt;tasks[&#039;payments&#039;] ) ) {
+				$gateways                             = WC()-&gt;payment_gateways-&gt;get_available_payment_gateways();
+				$enabled_gateways                     = array_filter(
+					$gateways,
+					function ( $gateway ) {
+						return &#039;yes&#039; === $gateway-&gt;enabled;
+					}
+				);
+				$this-&gt;tasks[&#039;payments&#039;][&#039;completed&#039;] = ! empty( $enabled_gateways );
+			}
+
+			if ( isset( $this-&gt;tasks[&#039;woocommerce-payments&#039;] ) ) {
+				$wc_pay_is_connected = false;
+				if ( class_exists( &#039;\WC_Payments&#039; ) ) {
+					$wc_payments_gateway = \WC_Payments::get_gateway();
+					$wc_pay_is_connected = method_exists( $wc_payments_gateway, &#039;is_connected&#039; )
+						? $wc_payments_gateway-&gt;is_connected()
+						: false;
+				}
+				$this-&gt;tasks[&#039;woocommerce-payments&#039;][&#039;completed&#039;] = $wc_pay_is_connected;
+			}
+		}
+	}
+
+endif;
+
+return new WC_Admin_Dashboard_Setup();
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on July 12th, 2021 at 10:33 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1626085993"></script>
+    <script src="../js/search.js?updated=1626085993"></script>
+</body>
+</html>
